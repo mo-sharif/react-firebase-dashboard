@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { injectIntl, intlShape } from 'react-intl';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { injectIntl, intlShape } from 'react-intl'
 import { Activity } from 'rmw-shell'
 //import { ResponsiveMenu } from 'material-ui-responsive-menu';
 import { withTheme, withStyles } from '@material-ui/core/styles'
 import { setDialogIsOpen } from 'rmw-shell/lib/store/dialogs/actions'
-import CompanyForm from '../../components/Forms/Company';
-import { withRouter } from 'react-router-dom';
-import Icon from '@material-ui/core/Icon';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import CompanyForm from '../../components/Forms/Company'
+import { withRouter } from 'react-router-dom'
+import Icon from '@material-ui/core/Icon'
+import Button from '@material-ui/core/Button'
+import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import DialogTitle from '@material-ui/core/DialogTitle'
 import { withFirebase } from 'firekit-provider'
 import FireForm from 'fireform'
 import { isLoading } from 'firekit'
-import { change, submit } from 'redux-form';
-import isGranted from 'rmw-shell/lib/utils/auth';
-import IconButton from '@material-ui/core/IconButton';
+import { change, submit } from 'redux-form'
+import isGranted from 'rmw-shell/lib/utils/auth'
+import IconButton from '@material-ui/core/IconButton'
 
-const path = '/companies/';
-const form_name = 'company';
+const path = '/companies/'
+const form_name = 'company'
 
 const styles = teheme => ({
 
@@ -33,7 +33,7 @@ const styles = teheme => ({
 class Company extends Component {
 
   validate = (values) => {
-    const { intl } = this.props;
+    const { intl } = this.props
     const errors = {}
 
     errors.name = !values.name ? intl.formatMessage({ id: 'error_required_field' }) : '';
@@ -44,21 +44,21 @@ class Company extends Component {
   }
 
   handleClose = () => {
-    const { setDialogIsOpen } = this.props;
+    const { setDialogIsOpen } = this.props
 
-    setDialogIsOpen('delete_company', false);
+    setDialogIsOpen('delete_company', false)
 
   }
 
   handleDelete = () => {
 
-    const { history, match, firebaseApp } = this.props;
-    const uid = match.params.uid;
+    const { history, match, firebaseApp } = this.props
+    const uid = match.params.uid
 
     if (uid) {
       firebaseApp.database().ref().child(`${path}${uid}`).remove().then(() => {
-        this.handleClose();
-        history.goBack();
+        this.handleClose()
+        history.goBack()
       })
     }
   }
@@ -77,7 +77,7 @@ class Company extends Component {
       firebaseApp,
       uid,
       isLoading
-    } = this.props;
+    } = this.props
 
     //const uid = match.params.uid;
 

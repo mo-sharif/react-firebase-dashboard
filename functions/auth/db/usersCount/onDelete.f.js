@@ -1,5 +1,5 @@
 const functions = require('firebase-functions')
-const usersUtil = require('../../utils/users')
+const usersUtil = require('../../../utils/users')
 const moment = require('moment')
 const admin = require('firebase-admin')
 try { admin.initializeApp() } catch (e) { console.log(e) }
