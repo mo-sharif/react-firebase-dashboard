@@ -69,12 +69,12 @@ Thanks to @SiradDev for creating the logo for this project :smile:
 MIT
 
 
-[logo-image]: https://www.app.mosh-media.com/favicon-32x32.png
+[logo-image]: https://firebasestorage.googleapis.com/v0/b/promania-prod.appspot.com/o/promania.png?alt=media&token=34b66a39-cd89-41dd-8425-81ad4c5d29b8
 [logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
 [travis-image]: https://travis-ci.org/TarikHuber/react-most-wanted.svg?branch=master
 [travis-url]: https://travis-ci.org/TarikHuber/react-most-wanted
-[daviddm-image]: https://img.shields.io/david/TarikHuber/react-most-wanted.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/TarikHuber/react-most-wanted
+[daviddm-image]: https://img.shields.io/david/Mosh-Media/react-firebase.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/Mosh-Media/react-firebase
 [license-image]: https://img.shields.io/npm/l/express.svg
 [license-url]: https://github.com/Mosh-Media/react-firebase/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
