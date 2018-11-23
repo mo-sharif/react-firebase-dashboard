@@ -35,7 +35,7 @@ class About extends Component {
         appBarContent={
           <IconButton
 
-            href='https://github.com/TarikHuber/react-most-wanted'
+            href='https://github.com/Mosh-Media'
             target='_blank'
             rel='noopener'
           >

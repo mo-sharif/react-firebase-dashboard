@@ -135,7 +135,7 @@ class Dashboard extends Component {
         iconElementRight={
           <Button
             style={{ marginTop: 4 }}
-            href='https://github.com/TarikHuber/react-most-wanted'
+            href='https://github.com/Mosh-Media'
             target='_blank'
             rel='noopener'
             secondary

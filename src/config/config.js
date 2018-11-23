@@ -6,20 +6,20 @@ import grants from './grants'
 
 const config = {
   firebase_config: {
-    apiKey: 'AIzaSyBQAmNJ2DbRyw8PqdmNWlePYtMP0hUcjpY',
-    authDomain: 'react-most-wanted-3b1b2.firebaseapp.com',
-    databaseURL: 'https://react-most-wanted-3b1b2.firebaseio.com',
-    projectId: 'react-most-wanted-3b1b2',
-    storageBucket: 'react-most-wanted-3b1b2.appspot.com',
-    messagingSenderId: '258373383650'
+    apiKey: 'AIzaSyAUn28Gaeo7qXlKlmjGz4nFlloycgenXmU',
+    authDomain: 'promania-prod.firebaseapp.com',
+    databaseURL: 'https://promania-prod.firebaseio.com',
+    projectId: 'promania-prod',
+    storageBucket: 'promania-prod.appspot.com',
+    messagingSenderId: '858526725120'
   },
   firebase_config_dev: {
-    apiKey: 'AIzaSyB31cMH9nJnERC1WCWA7lQHnY08voLs-Z0',
-    authDomain: 'react-most-wanted-dev.firebaseapp.com',
-    databaseURL: 'https://react-most-wanted-dev.firebaseio.com',
-    projectId: 'react-most-wanted-dev',
-    storageBucket: 'react-most-wanted-dev.appspot.com',
-    messagingSenderId: '70650394824'
+    apiKey: 'AIzaSyALXYwHOSdRF8YmfHvMxqubwkMgcmfbNuc',
+    authDomain: 'promania-dev.firebaseapp.com',
+    databaseURL: 'https://promania-dev.firebaseio.com',
+    projectId: 'promania-dev',
+    storageBucket: 'promania-dev.appspot.com',
+    messagingSenderId: '190096122218'
   },
   firebase_providers: [
     'google.com',

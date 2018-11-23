@@ -76,8 +76,8 @@ const styles = theme => ({
     color: 'red',
     margin: `${theme.spacing.unit * 3}px 0 ${theme.spacing.unit * 4}px`,
     width: '100%',
-    height: '40vw',
-    maxHeight: 250
+    /* height: '40vw', */
+    /* maxHeight: 250 */
   },
   steps: {
     maxWidth: theme.spacing.unit * 130,
@@ -161,7 +161,7 @@ class LandingPage extends Component {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta name="apple-mobile-web-app-status-bar-style" content={theme.palette.primary.main} />
           <meta name="msapplication-navbutton-color" content={theme.palette.primary.main} />
-          <title>REACT MOST WANTED</title>
+          <title>Promania</title>
         </Helmet>
         <AppBar position='static'>
           <Toolbar disableGutters>
@@ -183,7 +183,7 @@ class LandingPage extends Component {
                 name='github'
                 aria-label='Open Github'
                 color='inherit'
-                href='https://github.com/TarikHuber/react-most-wanted'
+                href='https://github.com/Mosh-Media'
                 target='_blank'
                 rel='noopener'
               >
@@ -199,7 +199,7 @@ class LandingPage extends Component {
           <div className={classes.hero}>
             <div className={classes.content}>
               <img
-                src='/rmw.svg'
+                src='/promania.png'
                 alt='Material-UI Logo'
                 className={classes.logo}
               />
@@ -212,7 +212,7 @@ class LandingPage extends Component {
                   gutterBottom
                   className={classes.title}
                 >
-                  {'REACT MOST WANTED'}
+                  {'Promania'}
                 </Typography>
                 <Typography
                   variant='headline'
@@ -221,7 +221,7 @@ class LandingPage extends Component {
                   gutterBottom
                   className={classes.headline}
                 >
-                  {'React Starter-Kit with all Most Wanted features.'}
+                  {'A place where influencers and businesses connect.'}
                 </Typography>
                 <Button
                   onClick={() => { history.push('/signin') }}
@@ -236,47 +236,37 @@ class LandingPage extends Component {
               <div className={classes.cardsContent}>
                 <Card className={classes.card}>
                   <CardContent>
-                    <Typography variant="headline" component="h2">Installation</Typography>
+                    <Typography variant="headline" component="h2">Influencer</Typography>
                     <br />
-                    <Typography  >{`Just run this script to start:`}</Typography>
+                    <Typography  >Is a form of marketing in which focus is placed on influential people rather than the target market as a whole on social media.</Typography>
                     <br />
-                    <Typography className={classes.pos} color="textSecondary"> npx create-react-app test-app --scripts-version rmw-react-scripts   </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" onClick={() => {
-                      var win = window.open('https://github.com/TarikHuber/rmw-shell', '_blank')
-                      win.focus();
+                      var win = window.open('/', '_blank')
+                      win.focus()
                     }} >Learn More</Button>
                   </CardActions>
                 </Card>
                 <Card className={classes.card}>
                   <CardContent>
-                    <Typography variant="headline" component="h2">Usage</Typography>
+                    <Typography variant="headline" component="h2">Business Owner</Typography>
                     <br />
-                    <Typography  >{`Set your configuration to the App component:`}</Typography>
+                    <Typography  >Individual or entity who owns a business entity in an attempt to profit from the successful operations of the company</Typography>
                     <br />
-                    <Typography className={classes.pos} color="textSecondary">
-                      {`import App from 'rmw-shell'`}
-                      <br />
-                      {`<App appConfig={{ configureStore, ...config }} />`}
-                    </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" onClick={() => {
-                      var win = window.open('https://github.com/TarikHuber/react-most-wanted', '_blank')
-                      win.focus();
+                      var win = window.open('/', '_blank')
+                      win.focus()
                     }} >Learn More</Button>
                   </CardActions>
                 </Card>
                 <Card className={classes.card}>
                   <CardContent>
-                    <Typography variant="headline" component="h2">What is this?</Typography>
+                    <Typography variant="headline" component="h2">Harry Potter</Typography>
                     <Typography noWrap={false} color="textSecondary">
-                      {`This is a OPEN SOURCE demo application that demonstartes the usage of the rmw-shell library 
-                    with react, Material-UI and firebase.  `}
-                      <br />
-                      {` This demo has no purpose to do something as an app. 
-                    It is here just to show how everthing works together. `}
+                    Harry Potter is The Boy Who Lived, singled out by Lord Voldemort at birth to be his greatest rival, and our hero.
                     </Typography>
                   </CardContent>
                   <CardActions>

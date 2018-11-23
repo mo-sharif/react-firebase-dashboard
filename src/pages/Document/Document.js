@@ -12,11 +12,11 @@ import Typography from '@material-ui/core/Typography'
 class Document extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       value: '',
       hotDogStatus: ''
-    };
+    }
   }
 
   componentWillMount() {
@@ -76,31 +76,31 @@ class Document extends Component {
           /><br />
           <Button variant="raised" color="primary" onClick={this.handleSave} style={{ margin: 12, marginLeft: 0 }} >
             Save
-      </Button>
+          </Button>
           <Button variant="raised" color="primary" onClick={this.handleWatch} disabled={isWatching} style={{ margin: 12, marginLeft: 0 }} >
             Watch
-      </Button>
+          </Button>
           <Button variant="raised" color="primary" onClick={this.handleUnwatch} disabled={!isWatching} style={{ margin: 12, marginLeft: 0 }} >
             Unwatch
-      </Button>
+          </Button>
           <Button variant="raised" color="secondary" onClick={this.handleDestroy} style={{ margin: 12, marginLeft: 0 }} >
             Destroy
-      </Button>
+          </Button>
 
         </div>
 
       </Activity>
-    );
+    )
 
   }
 }
 
 Document.propTypes = {
   intl: intlShape.isRequired,
-};
+}
 
 const mapStateToProps = (state) => {
-  const { docs, initialization } = state;
+  const { docs, initialization } = state
 
   const sandwichData = docs['samples/sandwichData'] ? docs['samples/sandwichData'] : {}
   const isWatching = initialization['samples/sandwichData'] ? true : false
@@ -108,9 +108,9 @@ const mapStateToProps = (state) => {
   return {
     sandwichData,
     isWatching
-  };
-};
+  }
+}
 
 export default connect(
   mapStateToProps, {}
-)(injectIntl(withFirebase(Document)));
+)(injectIntl(withFirebase(Document)))

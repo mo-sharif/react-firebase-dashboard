@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { injectIntl, intlShape } from 'react-intl'
 import { Activity } from 'rmw-shell'
 import Button from '@material-ui/core/Button'
-import { withFirebase } from 'firekit-provider';
+import { withFirebase } from 'firekit-provider'
 import TextField from '@material-ui/core/TextField'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import Icon from '@material-ui/core/Icon';
-import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon'
+import IconButton from '@material-ui/core/IconButton'
 // eslint-disable-next-line
 import firestore from 'firebase/firestore'
 
 class Collection extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       value: ''
-    };
+    }
   }
 
   componentDidMount() {
@@ -115,17 +115,17 @@ class Collection extends Component {
         </div>
 
       </Activity>
-    );
+    )
 
   }
 }
 
 Collection.propTypes = {
   intl: intlShape.isRequired,
-};
+}
 
 const mapStateToProps = (state) => {
-  const { collections, initialization } = state;
+  const { collections, initialization } = state
 
   const posts = collections['posts'] ? collections['posts'] : []
   const isWatching = initialization['posts'] ? true : false
@@ -133,8 +133,8 @@ const mapStateToProps = (state) => {
   return {
     posts,
     isWatching
-  };
-};
+  }
+}
 
 export default connect(
   mapStateToProps, {}

@@ -73,10 +73,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "author": "Tarik Huber",
-  "homepage": "https://www.react-most-wanted.com/",
+  "author": "Mo Sharif",
+  "homepage": "https://app.mosh-media.com",
   "license": "MIT",
-  "repository": "https://github.com/TarikHuber/react-most-wanted",
+  "repository": "https://github.com/mosh-media",
   "keywords": [
     "react-most-wanted",
     "react",

@@ -1,7 +1,6 @@
 import { defineMessages } from 'react-intl'
-
 const messages = defineMessages({
-  app_name: 'React Most Wanted',
+  app_name: 'Promania',
   dashboard: 'Panel',
   about: 'Acerca',
   page_not_found_demo: 'Página no encontrada demo',
@@ -147,5 +146,4 @@ const messages = defineMessages({
   infinitelist: 'Infinitelist'
 
 })
-
 export default messages
