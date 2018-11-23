@@ -25,9 +25,9 @@ import IconButton from '@material-ui/core/IconButton'
 const path = '/companies/'
 const form_name = 'company'
 
-const styles = teheme => ({
+const styles = theme => ({
 
-})
+}) 
 
 
 class Company extends Component {
@@ -106,7 +106,7 @@ class Company extends Component {
                 <Icon className="material-icons" >delete</Icon>
               </IconButton>
             }
-          </ div>
+          </div>
         }
 
         onBackClick={() => { history.goBack() }}
@@ -119,8 +119,8 @@ class Company extends Component {
             name={'company'}
             path={`${path}`}
             validate={this.validate}
-            onSubmitSuccess={(values) => { history.push('/companies'); }}
-            onDelete={(values) => { history.push('/companies'); }}
+            onSubmitSuccess={(values) => { history.push('/companies') }}
+            onDelete={(values) => { history.push('/companies') }}
             uid={uid}>
             <CompanyForm />
           </FireForm>
@@ -169,7 +169,7 @@ Company.propTypes = {
 
 
 const mapStateToProps = (state, ownProps) => {
-  const { intl, dialogs } = state;
+  const { intl, dialogs } = state
   const { match } = ownProps
 
   const uid = match.params.uid

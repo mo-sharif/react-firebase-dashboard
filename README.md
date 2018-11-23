@@ -3,7 +3,7 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
 [![Code Style][code-style-image]][code-style-url]
-
+[![Coverage Status](https://coveralls.io/repos/github/Mosh-Media/react-firebase/badge.svg?branch=master)](https://coveralls.io/github/Mosh-Media/react-firebase?branch=master)
 ## What is this?
 
 Built on React Most Wanted which is a react Starter Kit based on [Create React App](https://github.com/facebookincubator/create-react-app) and [Material-UI](https://material-ui.com/) that uses [Firebase](https://firebase.google.com/).
