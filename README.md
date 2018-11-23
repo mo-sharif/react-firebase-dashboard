@@ -1,4 +1,4 @@
-# ‌‌ [![LOGO][logo-image]][logo-url] React Most Wanted
+# ‌‌ [![LOGO][logo-image]][logo-url] Promania
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
@@ -69,14 +69,14 @@ Thanks to @SiradDev for creating the logo for this project :smile:
 MIT
 
 
-[logo-image]: https://www.react-most-wanted.com/favicon-32x32.png
-[logo-url]: https://github.com/TarikHuber/react-most-wanted/blob/master/README.md
+[logo-image]: https://www.app.mosh-media.com/favicon-32x32.png
+[logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
 [travis-image]: https://travis-ci.org/TarikHuber/react-most-wanted.svg?branch=master
 [travis-url]: https://travis-ci.org/TarikHuber/react-most-wanted
 [daviddm-image]: https://img.shields.io/david/TarikHuber/react-most-wanted.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/TarikHuber/react-most-wanted
 [license-image]: https://img.shields.io/npm/l/express.svg
-[license-url]: https://github.com/TarikHuber/react-most-wanted/master/LICENSE
+[license-url]: https://github.com/Mosh-Media/react-firebase/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [code-style-url]: http://standardjs.com/
 

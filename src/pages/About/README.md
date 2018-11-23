@@ -65,7 +65,7 @@ The informations you are seeking are skatered over some Medium articles writen b
 
 ## I have a problem. Where to ask?
 
-It depends on your problem. If you have a question please join our [gitter room](https://gitter.im/react-most-wanted/Lobby). If you notice a issue in the project don't hasitate to fill out a issue report to this project [here](https://github.com/TarikHuber/react-most-wanted/issues).
+It depends on your problem. If you have a question please join our [gitter room](https://gitter.im/react-most-wanted/Lobby). If you notice a issue in the project don't hasitate to fill out a issue report to this project [here](https://github.com/Mosh-Media/react-firebase/issues).
 
 ## I like this. Can I help somehow?
 
@@ -93,12 +93,12 @@ MIT
 
 
 [logo-image]: https://www.react-most-wanted.com/favicon-32x32.png
-[logo-url]: https://github.com/TarikHuber/react-most-wanted/blob/master/README.md
+[logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
 [travis-image]: https://travis-ci.org/TarikHuber/react-most-wanted.svg?branch=master
 [travis-url]: https://travis-ci.org/TarikHuber/react-most-wanted
 [daviddm-image]: https://img.shields.io/david/TarikHuber/react-most-wanted.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/TarikHuber/react-most-wanted
 [license-image]: https://img.shields.io/npm/l/express.svg
-[license-url]: https://github.com/TarikHuber/react-most-wanted/master/LICENSE
+[license-url]: https://github.com/Mosh-Media/react-firebase/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [code-style-url]: http://standardjs.com/
