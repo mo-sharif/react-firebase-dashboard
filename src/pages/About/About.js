@@ -19,7 +19,7 @@ class About extends Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     fetch(README)
       .then(response => response.text())
       .then(text => {
