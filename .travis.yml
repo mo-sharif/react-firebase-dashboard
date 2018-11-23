@@ -16,10 +16,6 @@ before_script:
   - chmod +x ./continuous_deployment/build.sh
   - travis_wait 40 ./continuous_deployment/build.sh
 
-script:
-  - chmod +x ./continuous_deployment/deploy.sh
-  - travis_wait 40 ./continuous_deployment/deploy.sh
-
 after_script:
   - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
