@@ -69,7 +69,7 @@ Thanks to @SiradDev for creating the logo for this project :smile:
 MIT
 
 
-[logo-image]: https://firebasestorage.googleapis.com/v0/b/promania-prod.appspot.com/o/promania.png?alt=media&token=34b66a39-cd89-41dd-8425-81ad4c5d29b8
+[logo-image]: https://firebasestorage.googleapis.com/v0/b/promania-prod.appspot.com/o/promania.png?alt=media&token=5e0420f0-9d0e-401e-a5c8-3eb33dbf2667
 [logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
 [travis-image]: https://travis-ci.org/TarikHuber/react-most-wanted.svg?branch=master
 [travis-url]: https://travis-ci.org/TarikHuber/react-most-wanted
