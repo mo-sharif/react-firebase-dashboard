@@ -15,11 +15,11 @@ class Document extends Component {
     super(props)
     this.state = {
       value: '',
-      hotDogStatus: ''
+      onlineStatus: ''
     }
   }
-
-  componentWillMount() {
+  /* Deprecated https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html */
+  UNSAFE_componentWillMount() {
     this.handleWatch()
   }
 
@@ -35,7 +35,7 @@ class Document extends Component {
     const docRef = firestore.doc('samples/sandwichData')
 
     docRef.set({
-      hotDogStatus: this.state.value
+      onlineStatus: this.state.value
     })
   }
 
@@ -65,14 +65,14 @@ class Document extends Component {
 
         <div style={{ padding: 15 }}>
           <Typography variant="display2" gutterBottom>
-            {`${intl.formatMessage({ id: 'hot_dog_status' })}: ${sandwichData.hotDogStatus}`}
+            {`${intl.formatMessage({ id: 'online_status' })}: ${sandwichData.onlineStatus}`}
           </Typography>
           <TextField
             value={this.state.value}
             onChange={(e) => {
               this.setState({ value: e.target.value })
             }}
-            placeholder={intl.formatMessage({ id: 'hot_dog_status' })}
+            placeholder={intl.formatMessage({ id: 'online_status' })}
           /><br />
           <Button variant="raised" color="primary" onClick={this.handleSave} style={{ margin: 12, marginLeft: 0 }} >
             Save

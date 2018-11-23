@@ -140,7 +140,7 @@ const messages = defineMessages({
   not_match_found: 'Nichst gefunden',
   edit_user: 'Benutzer bearbeiten',
   firestore: 'Firestore',
-  hot_dog_status: 'Online status',
+  online_status: 'Online status',
   user_label_search: 'Suchen',
   document: 'Document',
   collection: 'Collection',

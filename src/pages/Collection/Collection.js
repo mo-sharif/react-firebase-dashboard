@@ -85,7 +85,7 @@ class Collection extends Component {
             onChange={(e) => {
               this.setState({ value: e.target.value })
             }}
-            hintText={intl.formatMessage({ id: 'hot_dog_status' })}
+            hintText={intl.formatMessage({ id: 'online_status' })}
             ref={(input) => { if (input) { this.input = input } }}
           />
           <Button variant="raised" color="primary" onClick={this.handleAdd} disabled={this.state.value === ''} style={{ margin: 12 }} > Add </Button>
