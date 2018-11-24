@@ -2,7 +2,7 @@ const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 try { admin.initializeApp() } catch (e) { console.log(e) }
 
-exports = module.exports = functions.database.ref('/public_chats/{taskUid}').onCreate((eventSnapshot, context) => {
+module.exports = functions.database.ref('/public_chats/{taskUid}').onCreate((eventSnapshot, context) => {
   const authorName = eventSnapshot.child('authorName').val()
   const authorPhotoUrl = eventSnapshot.child('authorPhotoUrl').val()
 

@@ -12,7 +12,7 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
 import Icon from '@material-ui/core/Icon'
 import IconButton from '@material-ui/core/IconButton'
 // eslint-disable-next-line
-import firestore from 'firebase/firestore'
+//import firestore from 'firebase/firestore'
 
 class Collection extends Component {
 

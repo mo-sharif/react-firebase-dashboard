@@ -6,7 +6,7 @@ const gmailEmail = encodeURIComponent(functions.config().gmail ? functions.confi
 const gmailPassword = encodeURIComponent(functions.config().gmail ? functions.config().gmail.password : '')
 const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`)
 
-exports = module.exports = functions.auth.user().onDelete((userMetadata, context) => {
+module.exports = functions.auth.user().onDelete((userMetadata, context) => {
   const uid = userMetadata.uid
   const email = userMetadata.email
   const displayName = userMetadata.displayName

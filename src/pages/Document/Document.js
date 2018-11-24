@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button'
 import { withFirebase } from 'firekit-provider'
 import TextField from '@material-ui/core/TextField'
 // eslint-disable-next-line
-import firestore from 'firebase/firestore'
+//import firestore from 'firebase/firestore'
 import Typography from '@material-ui/core/Typography'
 
 class Document extends Component {

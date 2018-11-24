@@ -7,7 +7,7 @@ const gmailPassword = encodeURIComponent(functions.config().gmail ? functions.co
 const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`)
 const moment = require('moment')
 
-exports = module.exports = functions.auth.user().onCreate((uRecord, context) => {
+  module.exports = functions.auth.user().onCreate((uRecord, context) => {
   const userRecord = uRecord || {}
   const email = userRecord.email // The email of the user.
   const displayName = userRecord.displayName // The display name of the user.

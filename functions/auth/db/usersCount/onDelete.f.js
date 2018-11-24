@@ -4,7 +4,7 @@ const moment = require('moment')
 const admin = require('firebase-admin')
 try { admin.initializeApp() } catch (e) { console.log(e) }
 
-exports = module.exports = functions.database.ref('/users_count').onDelete((data, context) => {
+module.exports = functions.database.ref('/users_count').onDelete((data, context) => {
   const getDBUsers = admin.database().ref('users').once('value')
   const getAuthUsers = usersUtil.listAllUsers()
 

@@ -2,7 +2,7 @@ const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 try { admin.initializeApp() } catch (e) { console.log(e) }
 
-exports = module.exports = functions.database.ref('/role_grants/{roleUid}/{grantUid}').onWrite((eventSnapshot, context) => {
+module.exports = functions.database.ref('/role_grants/{roleUid}/{grantUid}').onWrite((eventSnapshot, context) => {
   const roleUid = context.params.roleUid
   const grantUid = context.params.grantUid
 
