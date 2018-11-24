@@ -7,33 +7,37 @@
 
 ## What is this?
 
-Built on React Most Wanted which is a react Starter Kit based on [Create React App](https://github.com/facebookincubator/create-react-app) and [Material-UI](https://material-ui.com/) that uses [Firebase](https://firebase.google.com/).
+Promania is a social platform built on today's most cutting edge web technologies and best practices to deliver high performance web software and smooth user experience across all devices. 
+
+This platform is built on RMW-Shell and create-react-app.
 
 
 ## Features
 
 * Material UI
-* code splitting
-* redux implementation
-* firebase to redux sync
-* authentication
-* authorization
-* push notifications UI integration
-* theming
-* internationalization
-* build in CI (Continues Integration)
-* build in CD (Continues Deployment)
-* realtime forms (isn't that awesome :smile: )
+* Code splitting
+* Redux implementation
+* Firebase to redux sync
+* Authentication
+* Authorization
+* Push notifications UI integration
+* Theming
+* Internationalization
+* Build in CI (Continues Integration)
+* Build in CD (Continues Deployment)
+* Realtime forms
 
+## Progressive Web application (PWA)
 
-# Resources
+## Firebase (Authentication, Hosting, Functions, Storage, Databse)
 
-- [Beyond create-react-app](https://codeburst.io/beyond-create-react-app-cra-a2063196a124)
-- [Organising your Firebase CLoud Functions](https://codeburst.io/organizing-your-firebase-cloud-functions-67dc17b3b0da)
-- [Firekit concepts to sync Firebase and redux](https://codeburst.io/firekit-concepts-to-sync-firebase-and-redux-606a1e3e50d6)
-- [Firebase and react Continuous Deployment](https://codeburst.io/firebase-and-react-continuous-deployment-2e6d81f0b6a1)
-- [Redux simple values](https://codeburst.io/redux-simple-values-7712694f311)
-- [React Most Wanted](https://medium.com/@tarikhuber/react-most-wanted-d4e916782c2e)
+## Material UI Design
+
+## Authentication
+
+## Scalable
+
+## Machine Learning
 
 
 ## License
