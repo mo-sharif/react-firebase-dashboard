@@ -20,7 +20,7 @@ exports = module.exports = functions.database.ref('/public_chats/{taskUid}').onC
         title: `${authorName || 'UserName'}`,
         body: eventSnapshot.child('message').val(),
         icon: authorPhotoUrl || '/apple-touch-icon.png',
-        click_action: 'https://www.react-most-wanted.com/public_chats',
+        click_action: 'https://app.mosh-media.com/public_chats',
         tag: 'public_chat'
       }
     }

@@ -1,5 +1,5 @@
 {
-  "name": "react-most-wanted",
+  "name": "promania",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -20,7 +20,7 @@
     "downshift": "^3.1.4",
     "echarts": "^4.1.0",
     "echarts-for-react": "^2.0.14",
-    "firebase": "^5.5.7",
+    "firebase": "^5.5.9",
     "firebaseui": "^3.4.1",
     "fireform": "^0.2.13",
     "firekit": "^1.0.27",
@@ -76,9 +76,9 @@
   "author": "Mo Sharif",
   "homepage": "https://app.mosh-media.com",
   "license": "MIT",
-  "repository": "https://github.com/mosh-media",
+  "repository": "https://github.com/Mosh-Media/promania-platform",
   "keywords": [
-    "react-most-wanted",
+    "promania",
     "react",
     "redux",
     "firebase"

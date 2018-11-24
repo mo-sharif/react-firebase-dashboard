@@ -6,7 +6,7 @@ const sleep = ms => {
 
 module.exports.runTest = async driver => {
   try {
-    await driver.get('https://www.react-most-wanted.com')
+    await driver.get('https://app.mosh-media.com')
 
     var signInButton = driver.wait(webdriver.until.elementLocated(webdriver.By.name('signin')))
     var passwordButton = driver.wait(

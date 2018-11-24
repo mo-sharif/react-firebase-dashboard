@@ -183,7 +183,7 @@ class LandingPage extends Component {
                 name='github'
                 aria-label='Open Github'
                 color='inherit'
-                href='https://github.com/Mosh-Media'
+                href='https://github.com/Mosh-Media/promania-platform'
                 target='_blank'
                 rel='noopener'
               >
