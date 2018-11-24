@@ -23,8 +23,8 @@ exports = module.exports = functions.auth.user().onDelete((userMetadata, context
   const mailOptions = {
     from: `"Promania" <${gmailEmail}>`,
     to: email,
-    subject: `Bye!`,
-    text: `Hey ${displayName || ''}!, We confirm that we have deleted your Promania account.`
+    subject: `We will miss you 😭`,
+    text: `Hi ${displayName || ''}!, We are sad to confirm that we have deleted your Promania account.`
   }
 
   const sendEmail = mailTransport.sendMail(mailOptions).then(() => {

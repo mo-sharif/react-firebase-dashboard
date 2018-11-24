@@ -52,8 +52,8 @@ exports = module.exports = functions.auth.user().onCreate((uRecord, context) => 
       const mailOptions = {
         from: `"Promania" <${gmailEmail}>`,
         to: email,
-        subject: `Welcome to Promania!`,
-        text: `Hey ${displayName || ''}!, Welcome to Promania. A place where Influencers can connect with business`
+        subject: `🎉 Welcome to Promania!`,
+        text: `👋 Hey! ${displayName || ''}!, Welcome to Promania. A place where Influencers connect with businesses without the headache ✌️`
       }
 
       promises.push(mailTransport.sendMail(mailOptions))
