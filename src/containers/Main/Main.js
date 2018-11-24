@@ -10,7 +10,7 @@ import { withA2HS } from 'a2hs'
 addLocalizationData(locales)
 
 class Main extends Component {
-  componentDidMount () {
+  UNSAFE_componentDidMount () {
     // const { setA2HPState } = this.props
     // console.log(this.props)
     // setA2HPState({ isAppInstallable: true })
