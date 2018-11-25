@@ -3,7 +3,8 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
 [![Code Style][code-style-image]][code-style-url]
-[![Coverage Status](https://coveralls.io/repos/github/Mosh-Media/react-firebase/badge.svg?branch=master)](https://coveralls.io/github/Mosh-Media/react-firebase?branch=master)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Mosh-Media/promania-platform.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Mosh-Media/promania-platform/context:javascript)
+
 
 ## What is this?
 
