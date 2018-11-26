@@ -152,7 +152,7 @@ class Company extends Component {
 
 
       </Activity>
-    );
+    )
   }
 }
 
@@ -165,7 +165,7 @@ Company.propTypes = {
   submit: PropTypes.func.isRequired,
   theme: PropTypes.object.isRequired,
   isGranted: PropTypes.func.isRequired,
-};
+}
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -180,8 +180,8 @@ const mapStateToProps = (state, ownProps) => {
     uid,
     isGranted: grant => isGranted(state, grant),
     isLoading: isLoading(state, `${path}/${uid}`)
-  };
-};
+  }
+}
 
 export default connect(
   mapStateToProps, { setDialogIsOpen, change, submit }

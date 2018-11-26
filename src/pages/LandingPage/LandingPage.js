@@ -13,119 +13,70 @@ import { withStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
+import classNames from 'classnames'
+import CardMedia from '@material-ui/core/CardMedia'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Grid from '@material-ui/core/Grid'
 
 const styles = theme => ({
-  main: {
-    display: 'flex',
-    flexDirection: 'column'
+  appBar: {
+    position: 'relative',
   },
-  root: {
-    flexGrow: 1,
-    flex: '1 0 100%'
-    // height: '100%',
-    // overflow: 'hidden'
+  textColor: {
+    color: 'white',
   },
-  hero: {
-    height: '100%',
-    // minHeight: '80vh',
-    flex: '0 0 auto',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: theme.palette.background.paper,
-    color: theme.palette.type === 'light' ? theme.palette.primary.dark : theme.palette.primary.main
+  icon: {
+    marginRight: theme.spacing.unit * 2,
   },
-  text: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
+  heroUnit: {
+    background: 'linear-gradient(45deg, #421caf 30%, #4679fa 90%)',
+    height: 800,
+    paddingTop: 100,
+    border: 0,
+    padding: 0,
+    maxHeight: 1600,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
   },
-  title: {
-    letterSpacing: '.7rem',
-    textIndent: '.7rem',
-    fontWeight: theme.typography.fontWeightLight,
-    [theme.breakpoints.only('xs')]: {
-      fontSize: 24,
-      letterSpacing: '.1em',
-      textIndent: '.1rem'
-    },
-    whiteSpace: 'nowrap'
-  },
-  headline: {
-    paddingLeft: theme.spacing.unit * 4,
-    paddingRight: theme.spacing.unit * 4,
-    marginTop: theme.spacing.unit,
+  heroContent: {
     maxWidth: 600,
-    textAlign: 'center',
-    [theme.breakpoints.only('xs')]: {
-      fontSize: 18
-    }
+    margin: '0 auto',
+    padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
   },
-  content: {
-    height: '100%',
-    // paddingTop: theme.spacing.unit * 8,
-    [theme.breakpoints.up('sm')]: {
-      paddingTop: theme.spacing.unit
-    }
+  heroButtons: {
+    marginTop: theme.spacing.unit * 4,
   },
-  button: {
-    marginTop: theme.spacing.unit * 3
+  layout: {
+    width: 'auto',
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
   },
-  logo: {
-    color: 'red',
-    margin: `${theme.spacing.unit * 3}px 0 ${theme.spacing.unit * 4}px`,
-    width: '100%',
-    /* height: '40vw', */
-    /* maxHeight: 250 */
-  },
-  steps: {
-    maxWidth: theme.spacing.unit * 130,
-    margin: 'auto'
-  },
-  step: {
-    padding: `${theme.spacing.unit * 3}px ${theme.spacing.unit * 2}px`
-  },
-  stepIcon: {
-    marginBottom: theme.spacing.unit
-  },
-  markdownElement: {},
-  cardsContent: {
-    padding: 15,
-    display: 'flex',
-    justifyContent: 'space-around',
-    flexWrap: 'wrap',
-    [theme.breakpoints.only('xs')]: {
-      width: '100%',
-      padding: 0,
-      paddingTop: 15
-    }
-
+  cardGrid: {
+    padding: `${theme.spacing.unit * 8}px 0`,
   },
   card: {
-    minWidth: 275,
-    maxWidth: 350,
-    margin: 15,
-    [theme.breakpoints.only('xs')]: {
-      width: '100%',
-      margin: 0,
-      marginTop: 7
-    }
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+  cardMedia: {
+    paddingTop: '56.25%', // 16:9
   },
-  cardTitle: {
-    marginBottom: 16,
-    fontSize: 14,
+  cardContent: {
+    flexGrow: 1,
   },
-  pos: {
-    marginBottom: 12,
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing.unit * 6,
   },
-
 })
+
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 class LandingPage extends Component {
 
@@ -156,129 +107,117 @@ class LandingPage extends Component {
     const { classes, history, theme } = this.props
 
     return (
-      <div className={classes.main}>
-        <Helmet>
-          <meta name="theme-color" content={theme.palette.primary.main} />
-          <meta name="apple-mobile-web-app-status-bar-style" content={theme.palette.primary.main} />
-          <meta name="msapplication-navbutton-color" content={theme.palette.primary.main} />
-          <title>Promania</title>
-        </Helmet>
-        <AppBar position='static'>
-          <Toolbar disableGutters>
-            <div style={{ flex: 1 }} />
+      <React.Fragment>
+        <CssBaseline />
+        <div className={classes.main}>
+          <Helmet>
+            <meta name="theme-color" content={theme.palette.primary.main} />
+            <meta name="apple-mobile-web-app-status-bar-style" content={theme.palette.primary.main} />
+            <meta name="msapplication-navbutton-color" content={theme.palette.primary.main} />
+            <title>Promania</title>
+          </Helmet>
+          <AppBar position='static'  className={classes.appBar}>
+            <Toolbar>
+              <Typography variant="h6" color="inherit">
+              Promania
+              </Typography>
+              <div style={{ flex: 1 }} />
 
-            <Tooltip id="tooltip-icon1" title="Sign in">
-              <IconButton
-                name='signin'
-                aria-label='Open Github'
-                color='inherit'
-                onClick={() => { history.push('/signin') }}
-                rel='noopener'
-              >
-                <LockIcon />
-              </IconButton>
-            </Tooltip>
-            <Tooltip id="tooltip-icon2" title="GitHub repository">
-              <IconButton
-                name='github'
-                aria-label='Open Github'
-                color='inherit'
-                href='https://github.com/Mosh-Media/promania-platform'
-                target='_blank'
-                rel='noopener'
-              >
-                <GitHubIcon />
-              </IconButton>
-            </Tooltip>
-          </Toolbar>
-        </AppBar>
-
-        <div className={classes.root}>
-
-
-          <div className={classes.hero}>
-            <div className={classes.content}>
-              <img
-                src='/promania.png'
-                alt='Material-UI Logo'
-                className={classes.logo}
-              />
-              <div className={classes.text}>
-                <Typography
-                  variant='display2'
-                  align='center'
-                  component='h1'
+              <Tooltip id="tooltip-icon1" title="Sign in">
+                <IconButton
+                  name='signin'
+                  aria-label='Open Github'
                   color='inherit'
-                  gutterBottom
-                  className={classes.title}
-                >
-                  {'Promania'}
-                </Typography>
-                <Typography
-                  variant='headline'
-                  component='h2'
-                  color='inherit'
-                  gutterBottom
-                  className={classes.headline}
-                >
-                  {'A place where influencers and businesses connect.'}
-                </Typography>
-                <Button
                   onClick={() => { history.push('/signin') }}
-                  className={classes.button}
-                  variant='outlined'
-                  color='primary'
+                  rel='noopener'
                 >
-                  {'Get Started'}
-                </Button>
-              </div>
-
-              <div className={classes.cardsContent}>
-                <Card className={classes.card}>
-                  <CardContent>
-                    <Typography variant="headline" component="h2">Influencer</Typography>
-                    <br />
-                    <Typography  >Is a form of marketing in which focus is placed on influential people rather than the target market as a whole on social media.</Typography>
-                    <br />
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" onClick={() => {
-                      var win = window.open('/', '_blank')
-                      win.focus()
-                    }} >Learn More</Button>
-                  </CardActions>
-                </Card>
-                <Card className={classes.card}>
-                  <CardContent>
-                    <Typography variant="headline" component="h2">Business Owner</Typography>
-                    <br />
-                    <Typography  >Individual or entity who owns a business entity in an attempt to profit from the successful operations of the company</Typography>
-                    <br />
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" onClick={() => {
-                      var win = window.open('/', '_blank')
-                      win.focus()
-                    }} >Learn More</Button>
-                  </CardActions>
-                </Card>
-                <Card className={classes.card}>
-                  <CardContent>
-                    <Typography variant="headline" component="h2">Harry Potter</Typography>
-                    <Typography noWrap={false} color="textSecondary">
-                    Harry Potter is The Boy Who Lived, singled out by Lord Voldemort at birth to be his greatest rival, and our hero.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" onClick={() => { history.push('/signin') }} >Get started</Button>
-                  </CardActions>
-                </Card>
+                  <LockIcon />
+                </IconButton>
+              </Tooltip>
+              <Tooltip id="tooltip-icon2" title="GitHub repository">
+                <IconButton
+                  name='github'
+                  aria-label='Open Github'
+                  color='inherit'
+                  href='https://github.com/Mosh-Media/promania-platform'
+                  target='_blank'
+                  rel='noopener'
+                >
+                  <GitHubIcon />
+                </IconButton>
+              </Tooltip>
+            </Toolbar>
+          </AppBar>
+          <main>
+            {/* Hero unit */}
+            <div className={classes.heroUnit} >
+              <div className={classes.heroContent}>
+                <Typography 
+                  component="h2" variant="h2" align="center" className={classes.textColor} gutterBottom>
+                  Promania
+                </Typography>
+                <Typography 
+                  variant="h6" align="center"  className={classes.textColor} color="textPrimary" paragraph>
+                  Launch your dashboard quickly without the headache
+                </Typography>
+                <div className={classes.heroButtons}>
+                  <Grid container justify="center">
+                    <Grid item>
+                      <Button variant="contained" color="secondary" 
+                        className={classes.customRedButton}
+                        onClick={() => { history.push('/signin') }}>
+                        Get Started
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </div>
               </div>
             </div>
-          </div>
+            <div className={classNames(classes.layout, classes.cardGrid)}>
+              {/* End hero unit */}
+              <Grid container spacing={40}>
+                {cards.map(card => (
+                  <Grid item key={card} sm={6} md={4} lg={3}>
+                    <Card className={classes.card}>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_164edaf95ee%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_164edaf95ee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.32500076293945%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" // eslint-disable-line max-len
+                        title="Image title"
+                      />
+                      <CardContent className={classes.cardContent}>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          Heading
+                        </Typography>
+                        <Typography>
+                          This is a media card. You can use this section to describe the content.
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <Button size="small" color="primary">
+                          View
+                        </Button>
+                        <Button size="small" color="primary">
+                          Edit
+                        </Button>
+                      </CardActions>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </main>
+          {/* Footer */}
+          <footer className={classes.footer}>
+            <Typography variant="h6" align="center" gutterBottom>
+              Footer
+            </Typography>
+            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+              Something here to give the footer a purpose!
+            </Typography>
+          </footer>
+          {/* End footer */}
         </div>
-      </div>
-
+      </React.Fragment>
     )
   }
 }

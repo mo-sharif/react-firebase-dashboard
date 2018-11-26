@@ -14,7 +14,7 @@ import Scrollbar from 'rmw-shell/lib/components/Scrollbar/Scrollbar'
 const currentYear = new Date().getFullYear()
 const daysPath = `/user_registrations_per_day/${currentYear}/${new Date().toISOString().slice(5, 7)}`
 const monthsPath = `/user_registrations_per_month/${currentYear}`
-const providerPath = `/provider_count`
+const providerPath = '/provider_count'
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -191,7 +191,7 @@ class Dashboard extends Component {
                   className='material-icons'
                   style={{ fontSize: 70, marginLeft: 16 }}>
                   group
-              </Icon>
+                </Icon>
               </div>
 
             </div>

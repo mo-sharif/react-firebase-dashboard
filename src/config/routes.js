@@ -14,17 +14,17 @@ const AsyncDocument = MyLoadable({ loader: () => import('../pages/Document') })
 const AsyncCollection = MyLoadable({ loader: () => import('../pages/Collection') })
 
 const routes = [
-  <RestrictedRoute type='private' path="/" exact component={AsyncDashboard} />,
-  <RestrictedRoute type='private' path="/dashboard" exact component={AsyncDashboard} />,
-  <RestrictedRoute type='private' path="/about" exact component={AsyncAbout} />,
-  <RestrictedRoute type='private' path="/companies" exact component={AsyncCompanies} />,
-  <RestrictedRoute type='private' path="/companies/edit/:uid" exact component={AsyncCompany} />,
-  <RestrictedRoute type='private' path="/companies/create" exact component={AsyncCompany} />,
-  <RestrictedRoute type='private' path="/tasks" exact component={AsyncTasks} />,
-  <RestrictedRoute type='private' path="/tasks/edit/:uid" exact component={AsyncTask} />,
-  <RestrictedRoute type='private' path="/document" exact component={AsyncDocument} />,
-  <RestrictedRoute type='private' path="/collection" exact component={AsyncCollection} />,
+  <RestrictedRoute type='private' key='' path="/" exact component={AsyncDashboard} />,
+  <RestrictedRoute type='private' key=''  path="/dashboard" exact component={AsyncDashboard} />,
+  <RestrictedRoute type='private'  key='' path="/about" exact component={AsyncAbout} />,
+  <RestrictedRoute type='private'  key='' path="/companies" exact component={AsyncCompanies} />,
+  <RestrictedRoute type='private'  key='' path="/companies/edit/:uid" exact component={AsyncCompany} />,
+  <RestrictedRoute type='private'  key='' path="/companies/create" exact component={AsyncCompany} />,
+  <RestrictedRoute type='private'  key='' path="/tasks" exact component={AsyncTasks} />,
+  <RestrictedRoute type='private'  key='' path="/tasks/edit/:uid" exact component={AsyncTask} />,
+  <RestrictedRoute type='private'  key='' path="/document" exact component={AsyncDocument} />,
+  <RestrictedRoute type='private'  key='' path="/collection" exact component={AsyncCollection} />,
 ]
 
 
-export default routes;
+export default routes
