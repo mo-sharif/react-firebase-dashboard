@@ -1,4 +1,4 @@
-# ‌‌ [![LOGO][logo-image]][logo-url] Promania Web Platform
+# ‌‌ [![LOGO][logo-image]][logo-url] Promania
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
