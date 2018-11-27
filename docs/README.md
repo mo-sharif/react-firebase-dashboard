@@ -4,8 +4,9 @@
 [![License][license-image]][license-url]
 [![Code Style][code-style-image]][code-style-url]
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Mosh-Media/promania-platform.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Mosh-Media/promania-platform/context:javascript)
+[![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
+[![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 ![Promania dashboard](./img/dashboard.png "Promania dashboard")
 
 ## What is this?
