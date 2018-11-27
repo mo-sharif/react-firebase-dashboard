@@ -5,7 +5,7 @@
 [![Code Style][code-style-image]][code-style-url]
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Mosh-Media/promania-platform.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Mosh-Media/promania-platform/context:javascript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
 
 ## What is this?
