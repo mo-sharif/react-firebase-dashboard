@@ -5,7 +5,7 @@
 [![Code Style][code-style-image]][code-style-url]
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Mosh-Media/promania-platform.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Mosh-Media/promania-platform/context:javascript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
+[![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
 
 ## What is this?
@@ -32,36 +32,8 @@ rmw-shell - The part that goes further than CRA. This one has all the main parts
 * Build in CD (Continues Deployment)
 * Realtime forms
 
-## Progressive Web application (PWA)
+## Links
 
-A Progressive Web App is:
-
-Progressive - Works for every user, regardless of browser choice because it's built with progressive enhancement as a core tenet.
-Responsive - Fits any form factor: desktop, mobile, tablet, or whatever is next.
-Connectivity independent - Enhanced with service workers to work offline or on low-quality networks.
-App-like - Feels like an app, because the app shell model separates the application functionality from application content.
-Fresh - Always up-to-date thanks to the service worker update process.
-Safe - Served via HTTPS to prevent snooping and to ensure content hasn't been tampered with.
-Discoverable - Is identifiable as an "application" thanks to W3C manifest and service worker registration scope, allowing search engines to find it.
-Re-engageable - Makes re-engagement easy through features like push notifications.
-Installable - Allows users to add apps they find most useful to their home screen without the hassle of an app store.
-Linkable - Easily share the application via URL, does not require complex installation.
-
-## Firebase (Authentication, Hosting, Functions, Storage, Database)
-
-- Authentication
-- Hosting
-- Functions
-- Storage
-- Database
-
-## Material UI Design
-
-## Authentication
-
-## Scalable
-
-## Machine Learning
 
 
 ## License
