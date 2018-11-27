@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "enzyme": "^3.7.0",
+    "nodemon": "^1.18.7",
     "react-scripts": "^2.1.1",
     "redux-logger": "^3.0.6",
     "redux-testkit": "^1.0.6",
