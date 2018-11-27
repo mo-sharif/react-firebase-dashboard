@@ -10,7 +10,7 @@ import { withFirebase } from 'firekit-provider'
 import CountUp from 'react-countup'
 import Icon from '@material-ui/core/Icon'
 import Scrollbar from 'rmw-shell/lib/components/Scrollbar/Scrollbar'
-
+import Demo from '../../components/Demo/Demo'
 const currentYear = new Date().getFullYear()
 const daysPath = `/user_registrations_per_day/${currentYear}/${new Date().toISOString().slice(5, 7)}`
 const monthsPath = `/user_registrations_per_month/${currentYear}`
@@ -143,57 +143,59 @@ class Dashboard extends Component {
           />
         }
         title={intl.formatMessage({ id: 'dashboard' })}>
-
         <Scrollbar>
-          <div style={{ margin: 5, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' }}>
-            <div style={{ flexGrow: 1, flexShrink: 1, maxWidth: 600 }}>
-              <Line
-                options={{
-                  maintainAspectRatio: true
-                }}
-                data={monthsComponentData}
-              />
-            </div>
-
-            <div style={{ flexGrow: 1, flexShrink: 1, maxWidth: 600 }}>
-              <Bar
-                options={{
-                  maintainAspectRatio: true
-                }}
-                data={daysComponentData}
-              />
-            </div>
-
-          </div>
-
-          <br />
-          <div style={{ margin: 5, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' }}>
-
-            <div style={{ flexGrow: 1, flexShrink: 1, maxWidth: 600 }}>
-              <Doughnut
-                data={providersComponentData}
-              />
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: 30 }}>
-              <CountUp
-                style={{
-                  fontSize: 100,
-                  color: theme.palette.primary.main,
-                  fontFamily: theme.fontFamily
-                }}
-                start={0}
-                end={usersCount}
-              />
-              <div>
-                <Icon
-                  color='secondary'
-                  className='material-icons'
-                  style={{ fontSize: 70, marginLeft: 16 }}>
-                  group
-                </Icon>
+          <div className={'main-panel'}>
+            <Demo />
+            <div style={{ margin: 5, display: 'flex', flexDirection: 'column', flexWrap: 'wrap', alignItems: 'center' }}>
+              <div style={{ flexGrow: 1, flexShrink: 1}}>
+                <Line
+                  options={{
+                    maintainAspectRatio: true
+                  }}
+                  data={monthsComponentData}
+                />
               </div>
 
+              <div style={{ flexGrow: 1, flexShrink: 1}}>
+                <Bar
+                  options={{
+                    maintainAspectRatio: true
+                  }}
+                  data={daysComponentData}
+                />
+              </div>
+
+            </div>
+
+            <br />
+            <div style={{ margin: 5, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' }}>
+
+              <div style={{ flexGrow: 1, flexShrink: 1 }}>
+                <Doughnut
+                  data={providersComponentData}
+                />
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: 30 }}>
+                <CountUp
+                  style={{
+                    fontSize: 100,
+                    color: theme.palette.primary.main,
+                    fontFamily: theme.fontFamily
+                  }}
+                  start={0}
+                  end={usersCount}
+                />
+                <div>
+                  <Icon
+                    color='secondary'
+                    className='material-icons'
+                    style={{ fontSize: 70, marginLeft: 16 }}>
+                    group
+                  </Icon>
+                </div>
+
+              </div>
             </div>
           </div>
         </Scrollbar>

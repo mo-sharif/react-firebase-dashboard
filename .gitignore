@@ -26,3 +26,8 @@ firebase-debug.log
 
 #codecov
 codecov.yml
+
+
+codelab.webloc
+/src/config
+/docs
