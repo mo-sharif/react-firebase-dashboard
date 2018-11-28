@@ -35,8 +35,8 @@ rmw-shell - The part that goes further than CRA. This one has all the main parts
 * Realtime forms
 
 ## Links
-- **[Learn More](https://mosh-media.github.io/promania-platform/)**
-- **[Live Demo](http://app.mosh-media.com)**
+*  **[Learn More](https://mosh-media.github.io/promania-platform/)**
+*  ***[Live Demo](http://app.mosh-media.com)**
 
 
 ## License
