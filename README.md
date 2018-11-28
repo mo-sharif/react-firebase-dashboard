@@ -35,7 +35,8 @@ rmw-shell - The part that goes further than CRA. This one has all the main parts
 * Realtime forms
 
 ## Links
-
+[Learn More](https://mosh-media.github.io/promania-platform/)
+[Live Demo](http://app.mosh-media.com)
 
 
 ## License
@@ -43,7 +44,7 @@ rmw-shell - The part that goes further than CRA. This one has all the main parts
 MIT
 
 
-[logo-image]: https://firebasestorage.googleapis.com/v0/b/promania-prod.appspot.com/o/promania.png?alt=media&token=5e0420f0-9d0e-401e-a5c8-3eb33dbf2667
+[logo-image]: https://raw.githubusercontent.com/Mosh-Media/promania-platform/master/docs/img/promania.png
 [logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
 [travis-image]: https://travis-ci.org/Mosh-Media/promania-platform.svg?branch=master
 [travis-url]: https://travis-ci.org/Mosh-Media/promania-platform
