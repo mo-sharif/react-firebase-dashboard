@@ -8,6 +8,9 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
+## Links
+*  **[Documentation](https://mosh-media.github.io/promania-platform/)**
+*  **[Live Demo](http://app.mosh-media.com)**
 
 
 ## What is this?
@@ -27,17 +30,13 @@ rmw-shell - The part that goes further than CRA. This one has all the main parts
 * Firebase to redux sync
 * Authentication
 * Authorization
+* Notifications
 * Push notifications UI integration
 * Theming
 * Internationalization
 * Build in CI (Continues Integration)
 * Build in CD (Continues Deployment)
 * Realtime forms
-
-## Links
-*  **[Learn More](https://mosh-media.github.io/promania-platform/)**
-*  **[Live Demo](http://app.mosh-media.com)**
-
 
 ## License
 
