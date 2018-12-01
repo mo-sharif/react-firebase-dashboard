@@ -35,7 +35,7 @@ class About extends Component {
         appBarContent={
           <IconButton
 
-            href='https://github.com/Mosh-Media/promania-platform'
+            href='https://github.com/Mosh-Media/promania-platform/tree/master/docs'
             target='_blank'
             rel='noopener'
           >

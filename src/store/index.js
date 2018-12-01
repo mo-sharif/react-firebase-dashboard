@@ -14,9 +14,8 @@ export default function configureStore () {
   let middlewares = [thunk]
 
   if (process.env.NODE_ENV !== 'production') {
-    middlewares.push(logger) // DEV middlewares
+    middlewares.push(logger) //DEV middlewares
   }
-
   const composeEnhancers =
     typeof window === 'object' &&
       window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__

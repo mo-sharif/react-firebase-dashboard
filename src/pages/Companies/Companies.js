@@ -65,7 +65,7 @@ class Companies extends Component {
           <div style={{ position: 'fixed', right: 18, zIndex: 3, bottom: 18 }}>
             {
               isGranted('create_company') &&
-              <Button variant='fab' color='secondary' onClick={() => { history.push(`/companies/create`) }} >
+              <Button variant='fab' color='secondary' onClick={() => { history.push('/companies/create') }} >
                 <Icon className='material-icons' >add</Icon>
               </Button>
             }

@@ -49,7 +49,7 @@ class Dashboard extends Component {
           lineTension: 0.1,
           backgroundColor: theme.palette.primary.main,
           borderColor: theme.palette.primary.main,
-          borderCapStyle: 'butt',
+          borderCapStyle: 'square',
           borderDash: [],
           borderDashOffset: 0.0,
           borderJoinStyle: 'miter',
@@ -59,9 +59,9 @@ class Dashboard extends Component {
           pointHoverRadius: 5,
           pointHoverBackgroundColor: theme.palette.primary.main,
           pointHoverBorderColor: theme.palette.secondary.main,
-          pointHoverBorderWidth: 2,
+          pointHoverBorderWidth: 1,
           pointRadius: 1,
-          pointHitRadius: 10,
+          pointHitRadius: 1,
           data: daysData
         }
       ]
@@ -90,7 +90,7 @@ class Dashboard extends Component {
           lineTension: 0.1,
           backgroundColor: theme.palette.primary.main,
           borderColor: theme.palette.primary.main,
-          borderCapStyle: 'butt',
+          borderCapStyle: 'square',
           borderDash: [],
           borderDashOffset: 0.0,
           borderJoinStyle: 'miter',
@@ -100,9 +100,9 @@ class Dashboard extends Component {
           pointHoverRadius: 5,
           pointHoverBackgroundColor: theme.palette.primary.main,
           pointHoverBorderColor: theme.palette.secondary.main,
-          pointHoverBorderWidth: 2,
+          pointHoverBorderWidth: 1,
           pointRadius: 1,
-          pointHitRadius: 10,
+          pointHitRadius: 1,
           data: monthsData
         }
       ]
@@ -180,7 +180,7 @@ class Dashboard extends Component {
                 <CountUp
                   style={{
                     fontSize: 100,
-                    color: theme.palette.primary.main,
+                    color: 'secondary',
                     fontFamily: theme.fontFamily
                   }}
                   start={0}

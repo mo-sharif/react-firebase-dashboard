@@ -76,7 +76,7 @@ const styles = theme => ({
   },
 })
 
-const cards = [0]
+const cards = [3]
 
 class LandingPage extends Component {
 
@@ -166,7 +166,7 @@ class LandingPage extends Component {
                       <Button variant="contained" color="secondary" 
                         className={classes.customRedButton}
                         onClick={() => { history.push('/signin') }}>
-                        Get Started
+                        Try our Demo
                       </Button>
                     </Grid>
                   </Grid>
@@ -208,11 +208,8 @@ class LandingPage extends Component {
           </main>
           {/* Footer */}
           <footer className={classes.footer}>
-            <Typography variant="h6" align="center" gutterBottom>
-              Footer
-            </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-              Something here to give the footer a purpose!
+              Promania 2018
             </Typography>
           </footer>
           {/* End footer */}

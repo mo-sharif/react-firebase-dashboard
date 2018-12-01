@@ -10,31 +10,31 @@ import bs from 'react-intl/locale-data/bs'
 import es from 'react-intl/locale-data/es'
 
 const locales = [
-    {
-        locale: 'en',
-        messages: en_messages,
-        data: en
-    },
-    {
-        locale: 'de',
-        messages: de_messages,
-        data: de
-    },
-    {
-        locale: 'bs',
-        messages: bs_messages,
-        data: bs
-    },
-    {
-        locale: 'ru',
-        messages: ru_messages,
-        data: ru
-    },
-    {
-        locale: 'es',
-        messages: es_messages,
-        data: es
-    }
+  {
+    locale: 'en',
+    messages: en_messages,
+    data: en
+  },
+  {
+    locale: 'de',
+    messages: de_messages,
+    data: de
+  },
+  {
+    locale: 'bs',
+    messages: bs_messages,
+    data: bs
+  },
+  {
+    locale: 'ru',
+    messages: ru_messages,
+    data: ru
+  },
+  {
+    locale: 'es',
+    messages: es_messages,
+    data: es
+  }
 
 ]
 

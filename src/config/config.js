@@ -25,14 +25,13 @@ const config = {
     'google.com',
     'facebook.com',
     'twitter.com',
-    'github.com',
     'password',
     'phone'
   ],
   initial_state: {
     themeSource: {
-      isNightModeOn: false,
-      source: 'light'
+      isNightModeOn: true,
+      source: 'dark'
     },
     locale: 'en'
   },

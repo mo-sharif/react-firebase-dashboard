@@ -1,32 +1,74 @@
-import red from '@material-ui/core/colors/red'
-import pink from '@material-ui/core/colors/pink'
-import green from '@material-ui/core/colors/green'
-import blue from '@material-ui/core/colors/blue'
-
 const themes = [
   {
-    id: 'default',
-    color: blue[500]
-  },
-  {
-    id: 'red',
-    color: red[500],
+    id: 'dark',
+    color: '#424242',
     source: {
       palette: {
-        primary: red,
-        secondary: pink,
-        error: red
+        primary: {
+          main: '#424242',
+          borderColor:'#ff5722',
+        },
+        secondary: {
+          main: '#424242',
+        },
+        error: {
+          main: '#e91e63',
+        },
       }
     }
   },
   {
-    id: 'green',
-    color: green[500],
+    id: 'light',
+    color: '#eaeaea',
+    source: {
+      palette:{
+        primary:{
+          main: '#ffffff',
+          dark: '#f7f7f7',
+        },
+        secondary:{
+          main: '#afaeae',
+        },
+        error: {
+          main: '#e91e63',
+        },
+      }
+    }
+  },
+  {
+    id: 'sky',
+    color: '#35baf6',
     source: {
       palette: {
-        primary: green,
-        secondary: red,
-        error: red
+        primary: {
+          main: '#35baf6',
+          dark: '#35baf6',
+          contrastText: '#ffffff',
+        },
+        secondary: {
+          main: '#03a9f4',
+        },
+        error: {
+          main: '#e91e63',
+        }
+      }
+    }
+  },
+  {
+    id: 'fire',
+    color: '#ff5722',
+    source: {
+      palette: {
+        primary: {
+          main: '#ff5722',
+          dark: '#ff5722',
+        },
+        secondary: {
+          main: '#ff5722',
+        },
+        error: {
+          main: '#e91e63',
+        },
       }
     }
   }

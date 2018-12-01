@@ -1,34 +1,34 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { injectIntl } from 'react-intl';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { injectIntl } from 'react-intl'
 import { Activity } from 'rmw-shell'
 import { setDialogIsOpen } from 'rmw-shell/lib/store/dialogs/actions'
-import Form from '../../components/Forms/Task';
-import { withRouter } from 'react-router-dom';
-import Icon from '@material-ui/core/Icon';
-import Button from '@material-ui/core/Button';
+import Form from '../../components/Forms/Task'
+import { withRouter } from 'react-router-dom'
+import Icon from '@material-ui/core/Icon'
+import Button from '@material-ui/core/Button'
 import { withFirebase } from 'firekit-provider'
 import FireForm from 'fireform'
-import IconButton from '@material-ui/core/IconButton';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import { submit } from 'redux-form';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import IconButton from '@material-ui/core/IconButton'
+import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import { submit } from 'redux-form'
+import DialogTitle from '@material-ui/core/DialogTitle'
 
-const path = '/public_tasks/';
+const path = '/public_tasks/'
 
 class Task extends Component {
 
   componentDidMount() {
-    this.props.watchList('users');
+    this.props.watchList('users')
   }
 
 
   handleCreateValues = (values) => {
 
-    const { auth } = this.props;
+    const { auth } = this.props
 
     return {
       created: new Date(),
@@ -41,28 +41,28 @@ class Task extends Component {
   }
 
   handleClose = () => {
-    const { setDialogIsOpen } = this.props;
+    const { setDialogIsOpen } = this.props
 
-    setDialogIsOpen('delete_task_from_list', undefined);
+    setDialogIsOpen('delete_task_from_list', undefined)
 
   }
 
   handleDelete = () => {
 
-    const { history, match, firebaseApp } = this.props;
-    const uid = match.params.uid;
+    const { history, match, firebaseApp } = this.props
+    const uid = match.params.uid
 
     if (uid) {
       firebaseApp.database().ref().child(`${path}${uid}`).remove().then(() => {
-        this.handleClose();
-        history.goBack();
+        this.handleClose()
+        history.goBack()
       })
     }
   }
 
   render() {
 
-    const { history, intl, dialogs, setDialogIsOpen, firebaseApp, submit } = this.props;
+    const { history, intl, dialogs, setDialogIsOpen, firebaseApp, submit } = this.props
 
     return (
       <Activity
@@ -92,8 +92,8 @@ class Task extends Component {
             firebaseApp={firebaseApp}
             name={'task'}
             path={path}
-            onSubmitSuccess={(values) => { history.push('/tasks'); }}
-            onDelete={(values) => { history.push('/tasks'); }}
+            onSubmitSuccess={(values) => { history.push('/tasks') }}
+            onDelete={(values) => { history.push('/tasks') }}
             handleCreateValues={this.handleCreateValues}
             uid={this.props.match.params.uid}>
             <Form />
@@ -121,21 +121,21 @@ class Task extends Component {
           </DialogActions>
         </Dialog>
       </Activity>
-    );
+    )
   }
 }
 
 
 const mapStateToProps = (state) => {
-  const { auth, intl, dialogs } = state;
+  const { auth, intl, dialogs } = state
 
   return {
     auth,
     intl,
     dialogs
-  };
-};
+  }
+}
 
 export default connect(
   mapStateToProps, { setDialogIsOpen, submit }
-)(injectIntl(withRouter(withFirebase(Task))));
+)(injectIntl(withRouter(withFirebase(Task))))
