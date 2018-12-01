@@ -3,6 +3,7 @@ import Loadable from 'react-loadable'
 import LoadingComponent from 'rmw-shell/lib/components/LoadingComponent'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import A2HSProvider from 'a2hs'
+import PageTransition from 'react-router-page-transition'
 
 const Loading = () => <LoadingComponent />
 
@@ -20,10 +21,12 @@ export default function App() {
   return (
     <A2HSProvider>
       <Router>
-        <Switch>
-          <Route path="/" exact component={LPAsync} />
-          <Route component={MainAsync} />
-        </Switch>
+        <PageTransition >
+          <Switch>
+            <Route path="/" exact component={LPAsync} />
+            <Route component={MainAsync} />
+          </Switch>
+        </PageTransition>
       </Router>
     </A2HSProvider>
   )

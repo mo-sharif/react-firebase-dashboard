@@ -19,6 +19,8 @@ const messages = defineMessages({
   es: 'Español',
   dark: 'Dark',
   light: 'Light',
+  sky: 'sky',
+  fire: 'fire',
   ics: 'ICS',
   sign_out: 'Sign out',
   sign_in: 'Sign in',
