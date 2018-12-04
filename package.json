@@ -24,6 +24,7 @@
     "echarts": "^4.2.0-rc.2",
     "echarts-for-react": "^2.0.15-beta.0",
     "firebase": "^5.6.0",
+    "firebase-tools": "^6.1.2",
     "firebaseui": "^3.4.1",
     "fireform": "^0.2.13",
     "firekit": "^1.0.29",

@@ -204,7 +204,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-sync-alt",
+                            i: "nc-icon nc-refresh-69",
                             t: "Update Now"
                           }
                         ]}
@@ -234,7 +234,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "far fa-calendar",
+                            i: "nc-icon nc-calendar-60",
                             t: "Last day"
                           }
                         ]}
@@ -264,7 +264,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "far fa-clock",
+                            i: "nc-icon nc-watch-time",
                             t: "In the last hour"
                           }
                         ]}
@@ -294,7 +294,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-sync-alt",
+                            i: "nc-icon nc-refresh-69",
                             t: "Update now"
                           }
                         ]}
@@ -323,7 +323,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-history",
+                            i: "nc-icon nc-paper",
                             t: " Updated 3 minutes ago"
                           }
                         ]}
@@ -356,7 +356,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-calendar-alt",
+                            i: "nc-icon nc-calendar-60",
                             t: " Number of emails sent"
                           }
                         ]}
@@ -387,7 +387,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-check",
+                            i: "nc-icon nc-check-2",
                             t: " Data information certified"
                           }
                         ]}
@@ -418,7 +418,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-check",
+                            i: "nc-icon nc-check-2",
                             t: " Data information certified"
                           }
                         ]}
@@ -449,7 +449,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-check",
+                            i: "nc-icon nc-check-2",
                             t: " Data information certified"
                           }
                         ]}
@@ -475,7 +475,7 @@ class Dashboard extends Component {
                       <Stats>
                         {[
                           {
-                            i: "fas fa-check",
+                            i: "nc-icon nc-check-2",
                             t: " Data information certified"
                           }
                         ]}

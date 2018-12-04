@@ -4002,8 +4002,8 @@ License - nucleoapp.com/license/
     .card .card-footer .stats i {
       margin-right: 5px;
       position: relative;
-      top: 0px;
-      color: #66615B; }
+      top: 1px;
+    }
     .card .card-footer .btn {
       margin: 0; }
   .card.card-plain {
