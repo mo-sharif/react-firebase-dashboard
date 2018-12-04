@@ -75,7 +75,9 @@
     "standard": "standard src/**/*.js ",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy-dev": "echo 'Deploying Dev: ' && firebase use dev && react-scripts build && firebase deploy --only hosting",
+    "deploy-prod": "echo 'Deploying Prod: ' && firebase use prod && react-scripts build && firebase deploy --only hosting"
   },
   "author": "Mo Sharif",
   "homepage": "https://app.mosh-media.com",
