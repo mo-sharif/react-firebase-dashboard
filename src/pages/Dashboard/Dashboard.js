@@ -60,7 +60,7 @@ class Dashboard extends Component {
           return key;
         });
     }
-
+    
     const daysComponentData = {
       labels: daysLabels,
       datasets: [
@@ -227,7 +227,8 @@ class Dashboard extends Component {
                       <Row>
                         <Col xs={5} md={4}>
                           <div className="icon-big text-center">
-                            <i className="nc-icon nc-money-coins text-success" />
+                            <i className="nc-icon nc-money-coins" 
+                            style={{ color: theme.palette.secondary.main }}/>
                           </div>
                         </Col>
                         <Col xs={7} md={8}>
@@ -236,7 +237,7 @@ class Dashboard extends Component {
                             <CardTitle tag="p">
                             <CountUp 
                               start={0} 
-                              end={'4100'}
+                              end={4100}
                               duration={1.25}
                               separator=","
                               decimals={0}
@@ -268,7 +269,8 @@ class Dashboard extends Component {
                       <Row>
                         <Col xs={5} md={4}>
                           <div className="icon-big text-center">
-                            <i className="nc-icon nc-vector text-danger" />
+                            <i className="nc-icon nc-vector" 
+                            style={{ color: theme.palette.secondary.main }}/>
                           </div>
                         </Col>
                         <Col xs={7} md={8}>
@@ -277,7 +279,7 @@ class Dashboard extends Component {
                             <CardTitle tag="p">
                             <CountUp 
                               start={0} 
-                              end={'12'}
+                              end={12}
                               duration={1.25}
                               separator=","
                               decimals={0}
@@ -308,7 +310,8 @@ class Dashboard extends Component {
                       <Row>
                         <Col xs={5} md={4}>
                           <div className="icon-big text-center">
-                            <i className="nc-icon nc-favourite-28 text-primary" />
+                            <i className="nc-icon nc-favourite-28" 
+                            style={{ color: theme.palette.secondary.main }}/>
                           </div>
                         </Col>
                         <Col xs={7} md={8}>
@@ -317,7 +320,7 @@ class Dashboard extends Component {
                             <CardTitle tag="p">
                             <CountUp 
                               start={0} 
-                              end={'45'}
+                              end={45}
                               duration={1.25}
                               separator=","
                               decimals={0}
@@ -536,7 +539,6 @@ class Dashboard extends Component {
 Dashboard.propTypes = {
   intl: intlShape.isRequired
 };
-
 const mapStateToProps = state => {
   const { paths } = state;
 
