@@ -56,7 +56,7 @@
     "react-materialui-notifications": "^0.5.1",
     "react-mic": "^12.2.3",
     "react-player": "^1.7.0",
-    "react-redux": "^5.1.0",
+    "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-toastify": "^4.4.0",
@@ -67,7 +67,7 @@
     "redux-form-material-ui": "^5.0.0-beta.3",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
-    "rmw-shell": "^4.1.17"
+    "rmw-shell": "^4.1.18"
   },
   "scripts": {
     "check": "npm-check -s -u",

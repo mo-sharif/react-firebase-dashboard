@@ -1,7 +1,7 @@
 const themes = [
   {
     id: 'dark',
-    color: '#424242',
+    color: 'black',
     source: {
       palette: {
         primary: {
