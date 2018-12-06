@@ -193,7 +193,16 @@ class Dashboard extends Component {
                           <div className="numbers">
                             <p className="card-category">Total Users</p>
                             <CardTitle tag="p">
-                              <CountUp start={0} end={usersCount} />
+                              <CountUp 
+                              start={0} 
+                              end={usersCount}
+                              duration={2.75}
+                              separator=" "
+                              decimals={0}
+                              decimal=","
+                              prefix=""
+                              suffix=""
+                               />
                             </CardTitle>
                           </div>
                         </Col>
@@ -224,7 +233,18 @@ class Dashboard extends Component {
                         <Col xs={7} md={8}>
                           <div className="numbers">
                             <p className="card-category">Revenue</p>
-                            <CardTitle tag="p">$ 1,345</CardTitle>
+                            <CardTitle tag="p">
+                            <CountUp 
+                              start={0} 
+                              end={'4100'}
+                              duration={1.25}
+                              separator=","
+                              decimals={0}
+                              decimal="."
+                              prefix="$"
+                              suffix=""
+                               />
+                               </CardTitle>
                           </div>
                         </Col>
                       </Row>
@@ -253,8 +273,18 @@ class Dashboard extends Component {
                         </Col>
                         <Col xs={7} md={8}>
                           <div className="numbers">
-                            <p className="card-category">Errors</p>
-                            <CardTitle tag="p">23</CardTitle>
+                            <p className="card-category">Alerts</p>
+                            <CardTitle tag="p">
+                            <CountUp 
+                              start={0} 
+                              end={'12'}
+                              duration={1.25}
+                              separator=","
+                              decimals={0}
+                              decimal="."
+                              prefix=""
+                              suffix=""
+                               /></CardTitle>
                           </div>
                         </Col>
                       </Row>
@@ -284,7 +314,18 @@ class Dashboard extends Component {
                         <Col xs={7} md={8}>
                           <div className="numbers">
                             <p className="card-category">Followers</p>
-                            <CardTitle tag="p">+45K</CardTitle>
+                            <CardTitle tag="p">
+                            <CountUp 
+                              start={0} 
+                              end={'45'}
+                              duration={1.25}
+                              separator=","
+                              decimals={0}
+                              decimal="."
+                              prefix="+"
+                              suffix="k"
+                               />
+                               </CardTitle>
                           </div>
                         </Col>
                       </Row>
