@@ -46,8 +46,9 @@ class Dashboard extends Component {
   }
 
   render() {
+    let styles = {}
     const { theme, intl, days, months, providers, usersCount, nightMode } = this.props;
-
+    nightMode ? styles.backgroundColor = '#f4f3ef' : styles.backgroundColor = '#FFFFFF' 
     let daysLabels = [];
     let daysData = [];
     if (days) {
@@ -178,8 +179,8 @@ class Dashboard extends Component {
             <div className="content">
               <Row>
                 <Col xs={12} sm={6} md={6} lg={3}>
-                  <Card className="card-stats" 
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                <Card className="card-stats" 
+                  style={styles}>
                     <CardBody>
                       <Row>
                         <Col xs={5} md={4}>
@@ -224,7 +225,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={6} md={6} lg={3}>
                   <Card className="card-stats" 
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardBody>
                       <Row>
                         <Col xs={5} md={4}>
@@ -267,7 +268,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={6} md={6} lg={3}>
                   <Card className="card-stats"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardBody>
                       <Row>
                         <Col xs={5} md={4}>
@@ -309,7 +310,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={6} md={6} lg={3}>
                   <Card className="card-stats"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardBody>
                       <Row>
                         <Col xs={5} md={4}>
@@ -354,7 +355,7 @@ class Dashboard extends Component {
               <Row>
                 <Col xs={12}>
                   <Card
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>Users Behavior</CardTitle>
                       <p className="card-category">24 Hours performance</p>
@@ -384,7 +385,7 @@ class Dashboard extends Component {
               <Row>
                 <Col xs={12} sm={12} md={4}>
                   <Card
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>Email Statistics</CardTitle>
                       <p className="card-category">Last Campaign Performance</p>
@@ -416,7 +417,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={12} md={8}>
                   <Card className="card-chart"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>NASDAQ: AAPL</CardTitle>
                       <p className="card-category">Line Chart With Points</p>
@@ -448,7 +449,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={12} md={6}>
                   <Card className="card-chart"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>Total Users</CardTitle>
                       <p className="card-category">User data</p>
@@ -480,7 +481,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={12} md={6}>
                   <Card className="card-chart"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>Users Per Month</CardTitle>
                       <p className="card-category">User data</p>
@@ -512,7 +513,7 @@ class Dashboard extends Component {
                 </Col>
                 <Col xs={12} sm={12} md={4}>
                   <Card className="card-chart"
-                  style={nightMode ? {backgroundColor: '#f4f3ef'} : {backgroundColor: '#FFFFFF'} }>
+                  style={styles}>
                     <CardHeader>
                       <CardTitle>Platform Sign-ups</CardTitle>
                       <p className="card-category">User data</p>
