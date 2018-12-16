@@ -6,7 +6,7 @@ const gmailEmail = encodeURIComponent(functions.config().gmail ? functions.confi
 const gmailPassword = encodeURIComponent(functions.config().gmail ? functions.config().gmail.password : '')
 const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`)
 
-module.exports = functions.auth.user().onDelete((userMetadata, context) => {
+exports = module.exports = functions.auth.user().onDelete((userMetadata, context) => {
   const uid = userMetadata.uid
   const email = userMetadata.email
   const displayName = userMetadata.displayName
@@ -20,6 +20,7 @@ module.exports = functions.auth.user().onDelete((userMetadata, context) => {
 
   let promises = []
 
+
   const mailOptions = {
     from: `"Promania" <${gmailEmail}>`,
     to: email,
@@ -27,7 +28,7 @@ module.exports = functions.auth.user().onDelete((userMetadata, context) => {
     text: `Hi ${displayName || ''}!, We are sad to confirm that we have deleted your Promania account.`
   }
 
-  const sendEmail = mailTransport.sendMail(mailOptions).then(() => {
+   const sendEmail = mailTransport.sendMail(mailOptions).then(() => {
     console.log('Account deletion confirmation email sent to:', email)
     return null
   })
