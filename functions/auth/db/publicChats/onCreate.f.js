@@ -17,7 +17,7 @@ module.exports = functions.database.ref('/public_chats/{taskUid}').onCreate((eve
 
     const payload = {
       notification: {
-        title: `${authorName || 'UserName'}`,
+        title: `${authorName || 'Guest'}`,
         body: eventSnapshot.child('message').val(),
         icon: authorPhotoUrl || '/apple-touch-icon.png',
         click_action: 'https://app.mosh-media.com/public_chats',
