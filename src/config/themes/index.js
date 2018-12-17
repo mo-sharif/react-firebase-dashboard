@@ -27,7 +27,7 @@ const themes = [
           dark: '#f7f7f7',
         },
         secondary:{
-          main: '#4a4a4a',
+          main: '#737373',
         },
         error: {
           main: '#e91e63',

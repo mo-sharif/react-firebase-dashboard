@@ -46,8 +46,8 @@ class Dashboard extends Component {
   }
 
   render() {
-    let styles = {}
     const { theme, intl, days, months, providers, usersCount, nightMode } = this.props;
+    let styles = { backgroundColor: theme.palette.background.paper }
     nightMode ? styles.backgroundColor = '#f4f3ef' : styles.backgroundColor = '#FFFFFF' 
     let daysLabels = [];
     let daysData = [];
