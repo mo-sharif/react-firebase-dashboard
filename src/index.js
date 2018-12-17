@@ -1,4 +1,3 @@
-
 import * as serviceWorker from 'rmw-shell/lib/utils/serviceWorker'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -15,4 +14,3 @@ export const AppAsync = Loadable({
 ReactDOM.render(<AppAsync />, document.getElementById('root'))
 
 serviceWorker.register({})
- 

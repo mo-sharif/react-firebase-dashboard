@@ -1,4 +1,5 @@
-# ‌‌ [![LOGO][logo-image]][logo-url] Promania
+# Promania
+
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![License][license-image]][license-url]
