@@ -65,6 +65,7 @@ class Dashboard extends Component {
       labels: daysLabels,
       datasets: [
         {
+          key: 2,
           label: intl.formatDate(Date.now(), { month: "long" }),
           fill: false,
           lineTension: 0.1,
@@ -107,6 +108,7 @@ class Dashboard extends Component {
       labels: monthsLabels,
       datasets: [
         {
+          key: 3,
           label: intl.formatMessage({ id: "user_registrationg_graph_label" }),
           fill: false,
           maintainAspectRatio: true,
@@ -152,6 +154,7 @@ class Dashboard extends Component {
       labels: providersLabels,
       datasets: [
         {
+          key: 1,
           data: providersData,
           backgroundColor: theme.palette.secondary.main,
           hoverBackgroundColor: theme.palette.secondary.secondary

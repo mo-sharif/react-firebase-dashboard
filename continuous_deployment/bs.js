@@ -1,5 +1,5 @@
 // To run this script use this command
-// node bs.js yourBSUserName yourBSKey
+// node bs.js yourBSGuest yourBSKey
 
 var webdriver = require('selenium-webdriver')
 var test = require('./bs_test.js')

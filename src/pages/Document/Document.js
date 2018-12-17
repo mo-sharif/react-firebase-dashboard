@@ -7,7 +7,7 @@ import { withFirebase } from 'firekit-provider'
 import TextField from '@material-ui/core/TextField'
 // eslint-disable-next-line
 //import firestore from 'firebase/firestore'
-import Typography from '@material-ui/core/Typography'
+//import Typography from '@material-ui/core/Typography'
 
 class Document extends Component {
 
@@ -64,9 +64,9 @@ class Document extends Component {
       <Activity title={intl.formatMessage({ id: 'document' })}>
 
         <div style={{ padding: 15 }}>
-          <Typography variant="display2" gutterBottom>
+          <h2 style={{color:'#969696'}}>
             {`${intl.formatMessage({ id: 'online_status' })}: ${sandwichData.onlineStatus}`}
-          </Typography>
+          </h2>
           <TextField
             value={this.state.value}
             onChange={(e) => {

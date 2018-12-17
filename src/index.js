@@ -1,12 +1,18 @@
+
+import * as serviceWorker from 'rmw-shell/lib/utils/serviceWorker'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import * as serviceWorker from 'rmw-shell/lib/utils/serviceWorker'
-import App, { MainAsync } from './App'
+import Loadable from 'react-loadable'
+import LoadingComponent from 'rmw-shell/lib/components/LoadingComponent'
 import 'bootstrap/dist/css/bootstrap.min.css'
-ReactDOM.render(<App />, document.getElementById('root'), () => {
-  setTimeout(() => {
-    MainAsync.preload()
-  }, 1500)
+
+const Loading = () => <LoadingComponent />
+export const AppAsync = Loadable({
+  loader: () => import('./App'),
+  loading: Loading
 })
 
-serviceWorker.register()
+ReactDOM.render(<AppAsync />, document.getElementById('root'))
+
+serviceWorker.register({})
+ 

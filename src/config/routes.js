@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from 'react'
 import makeLoadable from 'rmw-shell/lib/containers/MyLoadable'
 import RestrictedRoute from 'rmw-shell/lib/containers/RestrictedRoute'

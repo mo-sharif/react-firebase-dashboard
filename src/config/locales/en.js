@@ -147,6 +147,9 @@ const messages = defineMessages({
   document: 'Document',
   collection: 'Collection',
   infinitelist: 'Infinitelist',
+  error_required_field: 'Field is required ⚠️'
+
+
 
 })
 

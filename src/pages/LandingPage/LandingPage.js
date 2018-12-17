@@ -185,7 +185,7 @@ class LandingPage extends Component {
                         title="Image title"
                       />
                       <CardContent className={classes.cardContent}>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography  variant="h5" component="h2">
                           Heading
                         </Typography>
                         <Typography>
