@@ -11,6 +11,7 @@
 ## Links
 *  **[Documentation](https://mosh-media.github.io/promania-platform/)**
 *  **[Live Demo](http://app.mosh-media.com)**
+*  **[Machine learning Branch (tensorflow)](https://github.com/Mosh-Media/promania-platform/tree/ml)**
 
 
 ## What is this?
