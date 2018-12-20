@@ -9,40 +9,38 @@
 [![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
 ## Links
-* **[Documentation](https://mosh-media.github.io/promania-platform/)**
-* **[Live Demo](http://app.mosh-media.com)**
-* **[Machine learning Branch (tensorflow)](https://github.com/Mosh-Media/promania-platform/tree/ml)**
+*   **[Documentation](https://mosh-media.github.io/promania-platform/)**
+*   **[Live Demo](http://app.mosh-media.com)**
+*   **[Machine learning Branch (tensorflow)](https://github.com/Mosh-Media/promania-platform/tree/ml)**
 
+## Promania 
 
-## What is this?
+Promania is a web platform built on today's most cutting edge web technologies and best practices to deliver high performance web software and smooth user experience across all devices. 
 
-Promania is a social platform built on today's most cutting edge web technologies and best practices to deliver high performance web software and smooth user experience across all devices. 
+*   Essentially it's a boilerplate project that uses react, redux and firebase. It has all "Most Wanted" features you need for a full functional Progressive Web Application. The best part is that it is based on to main parts:
 
-* Promania is a boilerplate project that uses react, redux and firebase. It has all "Most Wanted" features you need for a full functional Progressive Web Application. The best part is that it is based on to main parts:
-
-* CRA - Create React App which is a very minimalistic boilerplate for react projects but with all webpack, babel and other tools and libraries setup for you. It is maintained by a great team from Facebook
+*   CRA - Create React App which is a very minimalistic boilerplate for react projects but with all webpack, babel and other tools and libraries setup for you. It is maintained by a great team from Facebook
 rmw-shell - The part that goes further than CRA. This one has all the main parts that a new application needs. The best about it is that it gets updated even when you have started your new project and added new parts to it. That way we can ensure that all projects get the needed updates.
 
 ## Top Features
 
-* Material UI
-* Code splitting
-* Redux implementation
-* Firebase to redux sync
-* Authentication
-* Authorization
-* Notifications
-* Push notifications UI integration
-* Theming
-* Internationalization
-* Build in CI (Continues Integration)
-* Build in CD (Continues Deployment)
-* Realtime forms
+*   Material UI
+*   Code splitting
+*   Redux implementation
+*   Firebase to redux sync
+*   Authentication
+*   Authorization
+*   Notifications
+*   Push notifications UI integration
+*   Theming
+*   Internationalization
+*   Build in CI (Continues Integration)
+*   Build in CD (Continues Deployment)
+*   Realtime forms
 
 ## License
 
 MIT
-
 
 [logo-image]: https://raw.githubusercontent.com/Mosh-Media/promania-platform/master/docs/img/promania.png
 [logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
@@ -54,4 +52,3 @@ MIT
 [license-url]: https://github.com/Mosh-Media/react-firebase/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [code-style-url]: http://standardjs.com/
-
