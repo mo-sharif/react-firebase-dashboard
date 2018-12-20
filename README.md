@@ -62,21 +62,39 @@ Thank you to [BrowserStack](https://www.browserstack.com/) for providing the inf
 Thanks to @SiradDev for creating the logo for this project :smile:
 
 ## TO DO
+
 - [ ] finish tests
 
 ## License
 
 MIT
 
+<<<<<<< HEAD
 
 [logo-image]: https://firebasestorage.googleapis.com/v0/b/promania-prod.appspot.com/o/promania.png?alt=media&token=5e0420f0-9d0e-401e-a5c8-3eb33dbf2667
 [logo-url]: https://github.com/Mosh-Media/react-firebase/blob/master/README.md
+=======
+[logo-image]: https://www.react-most-wanted.com/favicon-32x32.png
+[logo-url]: https://github.com/TarikHuber/react-most-wanted/blob/master/README.md
+>>>>>>> upstream/master
 [travis-image]: https://travis-ci.org/TarikHuber/react-most-wanted.svg?branch=master
 [travis-url]: https://travis-ci.org/TarikHuber/react-most-wanted
 [daviddm-image]: https://img.shields.io/david/Mosh-Media/react-firebase.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/Mosh-Media/react-firebase
 [license-image]: https://img.shields.io/npm/l/express.svg
+<<<<<<< HEAD
 [license-url]: https://github.com/Mosh-Media/react-firebase/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [code-style-url]: http://standardjs.com/
 
+=======
+[license-url]: https://github.com/TarikHuber/react-most-wanted/master/LICENSE
+[code-style-image]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[code-style-url]: https://github.com/prettier/prettier
+
+## Support on Beerpay
+
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/TarikHuber/react-most-wanted/badge.svg?style=beer-square)](https://beerpay.io/TarikHuber/react-most-wanted) [![Beerpay](https://beerpay.io/TarikHuber/react-most-wanted/make-wish.svg?style=flat-square)](https://beerpay.io/TarikHuber/react-most-wanted?focus=wish)
+>>>>>>> upstream/master
