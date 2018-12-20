@@ -9,9 +9,9 @@
 [![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
 ## Links
-*  **[Documentation](https://mosh-media.github.io/promania-platform/)**
-*  **[Live Demo](http://app.mosh-media.com)**
-*  **[Machine learning Branch (tensorflow)](https://github.com/Mosh-Media/promania-platform/tree/ml)**
+* **[Documentation](https://mosh-media.github.io/promania-platform/)**
+* **[Live Demo](http://app.mosh-media.com)**
+* **[Machine learning Branch (tensorflow)](https://github.com/Mosh-Media/promania-platform/tree/ml)**
 
 
 ## What is this?
