@@ -7,6 +7,7 @@ const MyLoadable = (opts, preloadComponents) =>
   makeLoadable({ ...opts, firebase: () => import('./firebase') }, preloadComponents)
 
 const AsyncDashboard = MyLoadable({ loader: () => import('../pages/Dashboard') })
+const AsyncMachineLearning = MyLoadable({ loader: () => import('../pages/MachineLearning') })
 const AsyncAbout = MyLoadable({ loader: () => import('../pages/About') })
 const AsyncCompany = MyLoadable({ loader: () => import('../pages/Companies/Company') })
 const AsyncCompanies = MyLoadable({ loader: () => import('../pages/Companies/Companies') }, [AsyncCompany])
@@ -18,6 +19,7 @@ const AsyncCollection = MyLoadable({ loader: () => import('../pages/Collection')
 const routes = [
   <RestrictedRoute type="private" path="/" exact component={AsyncDashboard} />,
   <RestrictedRoute type="private" path="/dashboard" exact component={AsyncDashboard} />,
+  <RestrictedRoute type="private" path="/machinelearning" exact component={AsyncMachineLearning} />,
   <RestrictedRoute type="private" path="/about" exact component={AsyncAbout} />,
   <RestrictedRoute type="private" path="/companies" exact component={AsyncCompanies} />,
   <RestrictedRoute type="private" path="/companies/edit/:uid" exact component={AsyncCompany} />,

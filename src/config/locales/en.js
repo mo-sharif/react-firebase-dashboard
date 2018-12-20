@@ -3,6 +3,7 @@ import { defineMessages } from 'react-intl'
 const messages = defineMessages({
   app_name: 'Promania',
   dashboard: 'Dashboard',
+  machinelearning: 'Machine Learning',
   about: 'About',
   page_not_found_demo: 'Page not found demo',
   '404': '404',

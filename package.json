@@ -12,6 +12,7 @@
     "@date-io/moment": "0.0.2",
     "@material-ui/core": "^3.6.2",
     "@material-ui/icons": "^3.0.1",
+    "@tensorflow/tfjs": "^0.14.1",
     "a2hs": "^1.0.2",
     "bootstrap": "^4.1.3",
     "chart.js": "^2.7.3",
@@ -28,6 +29,7 @@
     "material-ui-filter": "^2.1.12",
     "material-ui-image": "^3.0.1",
     "material-ui-pickers": "^2.0.4",
+    "mnist": "^1.1.0",
     "moment": "^2.23.0",
     "muishift": "^1.0.8",
     "prop-types": "^15.6.2",
@@ -55,7 +57,8 @@
     "redux-form-material-ui": "^5.0.0-beta.3",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
-    "rmw-shell": "^5.0.9"
+    "rmw-shell": "^5.0.9",
+    "tfjsx": "^1.0.1"
   },
   "scripts": {
     "check": "npm-check -s -u",

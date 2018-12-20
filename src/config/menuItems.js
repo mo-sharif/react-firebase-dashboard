@@ -74,6 +74,12 @@ const getMenuItems = (props) => {
       leftIcon: <Icon className='material-icons' >dashboard</Icon>
     },
     {
+      value: '/machinelearning',
+      visible: isAuthorised,
+      primaryText: intl.formatMessage({ id: 'machinelearning' }),
+      leftIcon: <Icon className='material-icons' >bar_chart</Icon>
+    },
+    {
       visible: isAuthorised,
       primaryText: intl.formatMessage({ id: 'chats' }),
       primaryTogglesNestedList: true,
