@@ -1,39 +1,39 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import { withTheme } from "@material-ui/core/styles";
-import { injectIntl } from "react-intl";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
-import Icon from "@material-ui/core/Icon";
-import Button from "@material-ui/core/Button";
-import { withRouter } from "react-router-dom";
-import Avatar from "@material-ui/core/Avatar";
-import { withFirebase } from "firekit-provider";
-import isGranted from "rmw-shell/lib/utils/auth";
-import { Activity, Scrollbar } from "rmw-shell";
-import { Card, CardBody, Row, Col } from "reactstrap";
-import "../../assets/paper-dashboard.css";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { withTheme } from '@material-ui/core/styles'
+import { injectIntl } from 'react-intl'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
+import Divider from '@material-ui/core/Divider'
+import Icon from '@material-ui/core/Icon'
+import Button from '@material-ui/core/Button'
+import { withRouter } from 'react-router-dom'
+import Avatar from '@material-ui/core/Avatar'
+import { withFirebase } from 'firekit-provider'
+import isGranted from 'rmw-shell/lib/utils/auth'
+import { Activity, Scrollbar } from 'rmw-shell'
+import { Card, CardBody, Row, Col } from 'reactstrap'
+import '../../assets/paper-dashboard.css'
 
 class Companies extends Component {
   componentDidMount() {
-    const { watchList, firebaseApp } = this.props;
+    const { watchList, firebaseApp } = this.props
 
     let ref = firebaseApp
       .database()
-      .ref("companies")
-      .limitToFirst(20);
+      .ref('companies')
+      .limitToFirst(20)
 
-    watchList(ref);
+    watchList(ref)
   }
 
   renderList(companies) {
-    const { history } = this.props;
+    const { history } = this.props
 
     if (companies === undefined) {
-      return <div />;
+      return <div />
     }
 
     return companies.map((company, index) => {
@@ -42,17 +42,17 @@ class Companies extends Component {
           <ListItem
             key={index}
             onClick={() => {
-              history.push(`/companies/edit/${company.key}`);
+              history.push(`/companies/edit/${company.key}`)
             }}
             id={index}
           >
             {company.val.photoURL && (
-              <Avatar src={company.val.photoURL} alt="bussines" />
+              <Avatar src={company.val.photoURL} alt='bussines' />
             )}
             {!company.val.photoURL && (
               <Avatar>
-                {" "}
-                <Icon> business </Icon>{" "}
+                {' '}
+                <Icon> business </Icon>{' '}
               </Avatar>
             )}
             <ListItemText
@@ -60,40 +60,40 @@ class Companies extends Component {
               secondary={company.val.full_name}
             />
           </ListItem>
-          <Divider variant="inset" />
+          <Divider variant='inset' />
         </div>
-      );
-    });
+      )
+    })
   }
 
   render() {
-    const { intl, companies, theme, history, isGranted } = this.props;
-    let styles = { backgroundColor: theme.palette.background.paper };
+    const { intl, companies, theme, history, isGranted } = this.props
+    let styles = { backgroundColor: theme.palette.background.paper }
 
     return (
       <Activity
         isLoading={companies === undefined}
-        containerStyle={{ overflow: "hidden" }}
-        title={intl.formatMessage({ id: "companies" })}
+        containerStyle={{ overflow: 'hidden' }}
+        title={intl.formatMessage({ id: 'companies' })}
       >
         <Scrollbar>
-          <div className={"main-panel"}>
-            <div className="content">
+          <div className={'main-panel'}>
+            <div className='content'>
               <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
-                  <Card className="card-stats" style={styles}>
+                  <Card className='card-stats' style={styles}>
                     <CardBody>
                       <div
                         style={{
-                          overflow: "none",
+                          overflow: 'none',
                           backgroundColor: theme.palette.convasColor
                         }}
                       >
                         <List
-                          id="test"
-                          style={{ height: "100%" }}
+                          id='test'
+                          style={{ height: '100%' }}
                           ref={field => {
-                            this.list = field;
+                            this.list = field
                           }}
                         >
                           {this.renderList(companies)}
@@ -102,21 +102,21 @@ class Companies extends Component {
 
                       <div
                         style={{
-                          position: "fixed",
+                          position: 'fixed',
                           right: 18,
                           zIndex: 3,
                           bottom: 18
                         }}
                       >
-                        {isGranted("create_company") && (
+                        {isGranted('create_company') && (
                           <Button
-                            variant="fab"
-                            color="secondary"
+                            variant='fab'
+                            color='secondary'
                             onClick={() => {
-                              history.push("/companies/create");
+                              history.push('/companies/create')
                             }}
                           >
-                            <Icon className="material-icons">add</Icon>
+                            <Icon className='material-icons'>add</Icon>
                           </Button>
                         )}
                       </div>
@@ -128,7 +128,7 @@ class Companies extends Component {
           </div>
         </Scrollbar>
       </Activity>
-    );
+    )
   }
 }
 
@@ -136,18 +136,18 @@ Companies.propTypes = {
   companies: PropTypes.array,
   history: PropTypes.object,
   isGranted: PropTypes.func.isRequired
-};
+}
 
 const mapStateToProps = state => {
-  const { auth, lists } = state;
+  const { auth, lists } = state
 
   return {
     companies: lists.companies,
     auth,
     isGranted: grant => isGranted(state, grant)
-  };
-};
+  }
+}
 
 export default connect(mapStateToProps)(
   injectIntl(withTheme()(withRouter(withFirebase(Companies))))
-);
+)
