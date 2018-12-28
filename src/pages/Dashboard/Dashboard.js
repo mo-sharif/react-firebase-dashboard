@@ -50,7 +50,7 @@ class Dashboard extends Component {
     const { theme, intl, days, months, providers, usersCount, nightMode } = this.props
     let styles = { 
       cardBackground:{
-      backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.paper,
     }
   }
     console.log(theme)
