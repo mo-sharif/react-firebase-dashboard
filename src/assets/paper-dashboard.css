@@ -3948,7 +3948,6 @@ License - nucleoapp.com/license/
   transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease; }
 
   .card:hover{
-    box-shadow:0px 13px 15px rgba(0, 0, 0, 0.13);
     transform: scale(1.01)}
 
   .card .card-body {
