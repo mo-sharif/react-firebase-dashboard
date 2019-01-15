@@ -19,7 +19,7 @@ const themes = [
   },
   {
     id: 'light',
-    color: '#eaeaeas',
+    color: '#eaeaea',
     source: {
       palette:{
         primary:{

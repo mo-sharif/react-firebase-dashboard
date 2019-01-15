@@ -53,7 +53,9 @@ class Dashboard extends Component {
         backgroundColor: theme.palette.background.paper,
     }
   }
-    console.log(theme)
+/*     this.setState({
+      theme:
+    }) */
     //Check if night mode is on
     nightMode ? styles.backgroundColor = '#f4f3ef' : styles.backgroundColor = '#FFFFFF' 
     let daysLabels = []
@@ -181,6 +183,7 @@ class Dashboard extends Component {
             icon={<GitHubIcon />}
           />
         }
+        style={{backgroundColor:'red'}}
         title={intl.formatMessage({ id: "dashboard" })}
       >
         <Scrollbar>
