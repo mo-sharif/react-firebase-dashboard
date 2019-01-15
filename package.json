@@ -9,7 +9,7 @@
     "source-map-explorer": "^1.6.0"
   },
   "dependencies": {
-    "@date-io/moment": "0.0.2",
+    "@date-io/moment": "1.0.1",
     "@material-ui/core": "^3.7.0",
     "@material-ui/icons": "^3.0.1",
     "a2hs": "^1.0.2",
@@ -49,7 +49,7 @@
     "react-router-dom": "^4.3.1",
     "react-toastify": "^4.5.1",
     "react-virtualized": "^9.21.0",
-    "reactstrap": "^6.5.0",
+    "reactstrap": "^7.0.2",
     "redux": "^4.0.1",
     "redux-form": "^8.0.4",
     "redux-form-material-ui": "^5.0.0-beta.3",
