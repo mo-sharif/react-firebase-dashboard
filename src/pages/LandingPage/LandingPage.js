@@ -159,7 +159,7 @@ class LandingPage extends Component {
               <div className={classes.heroContent}>
                 <div>
                   <img
-                    src='https://cdn.pbrd.co/images/HSkE2Wm.png'
+                    src='https://www.mosh-media.com/wp-content/themes/mosh-media/cache/smartmockups_jpx6yyen-8f5788c5.png'
                     alt='Promania'
                     width='270'
                   />
