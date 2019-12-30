@@ -8,7 +8,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Lighthouse score: 97/100](https://lighthouse-badge.appspot.com/?score=97)](https://github.com/ebidel/lighthouse-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/Mosh-Media/promania-platform.svg)](https://greenkeeper.io/)
 
-# No Longer maintained --> Free to grab ⚡ 🤷
+*No Longer maintained --> Free to grab* ⚡ 🤷
 
 ## Links
 *   **[Documentation](https://mosh-media.github.io/promania-platform/)**
